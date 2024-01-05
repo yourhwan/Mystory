@@ -145,6 +145,7 @@ public class Main {
     }
 
     // 오후 2시 기상 후 바로 씻은 뒤 상황 선택
+
     private static void handleAns7(Scanner sc) {
         System.out.println("\n\nQ.비록 늦게 일어났지만 양심은 있는지 바로 씻고 나온 오윤환, 허기진 배를 채우기 위해 점심을 먹으려고 합니다. 무엇을 먹을까요?" +
                            "\n1.집에 있는 밥을 먹는다    2.배달을 시켜 먹는다.");
@@ -165,8 +166,8 @@ public class Main {
         }
 
     }
-    
     // 오후 2시 기상 후 바로 씻지 않은 뒤 상황 선택
+
     private static void handleAns8(Scanner sc) {
         System.out.println("\n\nQ.백수답게 늦게 일어난 후 씻지도 않은 오윤환, 무엇을 할까요?" +
                 "\n1.트위치를 본다    2.오늘은 쿠팡 알바를 가는 날이었다, 밥을 먹자");
@@ -187,8 +188,8 @@ public class Main {
         }
 
     }
-    
     // 오전 9시 씻고 아침 먹은 후 상황 선택
+
     private static void handleAns9(Scanner sc) {
         System.out.println("\n\nQ.집밥으로 든든히 배를 채운 오윤환, 오늘의 일정을 확인 해본다. 오늘의 일정은 무엇일까?" +
                 "\n1.오랜만에 밖에 나가 기분 전환을 한다    2. 언제까지 백수로 살 것인가, 공부를 하자");
@@ -209,8 +210,8 @@ public class Main {
         }
 
     }
-    
     // 오전 9시 씻고 아침 거른 후 상황 선택
+
     private static void handleAns10(Scanner sc) {
         System.out.println("\n\nQ.평소 아침을 안 먹는 오윤환, 오늘도 아침을 거르고 할 일을 체크 한다. 이제 무엇을 할까?" +
                            "\n1.일찍 일어났으니 부지런히 방 청소를 하자    2.집 밖을 잘 안 나가지만 오늘은 산책을 해보자");
@@ -231,7 +232,7 @@ public class Main {
         }
 
     }
-    
+
     // 오전 9시 안 씻고 집 밥 먹은 후 상황 선택
     private static void handleAns11(Scanner sc) {
         System.out.println("\n\nQ.근본 집 밥으로 배를 든든히 채운 오윤환, 일찍 일어난 김에 공부를 하고자 한다. 어디서 공부를 할까?" +
@@ -251,5 +252,30 @@ public class Main {
             System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
             handleAns11(sc); // 다시 질문으로 되돌아 감
         }
+
     }
+
+    // 오전 9시 씻지 않은 뒤 유부초밥 먹은 후 상황 선택
+    private static void handleAns12(Scanner sc) {
+        System.out.println("\n\nQ.역시 편의점 유부 초밥은 진리다. 배도 든든히 채운 오윤환, 이제 무엇을 할까?" +
+                           "\n1.오늘은 학원을 같이 다녔던 사람들을 만나는 날, 씻고 홍대로 가자    2.오랜만에 엄마와 데이트를 하자");
+
+        int answer12 = sc.nextInt();
+
+        if (answer12 == 1) {
+            System.out.println("취업을 한 학원사람들을 만나기로 했던 날, 홍대로 향하는 백수 오윤환.");
+            handleAns22(sc); // 홍대로 간다
+
+        } else if (answer12 == 2) {
+            System.out.println("오랜만에 엄마와 데이트를 하기로 하고 나갈 준비를 마친 백수 오윤환.");
+            handleAns23(sc); // 엄마와 데이트
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns12(sc); // 다시 질문으로 되돌아 감
+        }
+
+    }
+
+
 } // end of public class simulation.Main
