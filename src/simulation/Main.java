@@ -1,3 +1,5 @@
+package simulation;
+
 import java.util.*;
 
 public class Main {
@@ -108,12 +110,12 @@ public class Main {
         int answer5 = sc.nextInt();
 
         if (answer5 == 1) {
-            System.out.println("백수지만 그래도 아직 사람입니다. 오윤환은 곧장 씻습니다.");
-            handleAns9(sc); // 오윤환은 곧장 씻습니다
+            System.out.println("백수는 이런 거 원래 잘 챙긴다, 아침을 챙겨 먹는 오윤환.");
+            handleAns9(sc); // 아침을 챙겨 먹는다
 
         } else if (answer5 == 2) {
-            System.out.println("역시 백수는 사람 취급을 하면 안 됩니다. 오윤환은 바로 씻지 않고 밍기적 침대에서 뒹굴거립니다.");
-            handleAns10(sc); // 바로 씻지 않고 밍기적 침대에서 뒹굴거립니다
+            System.out.println("원래 아침을 잘 챙겨 먹지 않는 오윤환, 오늘도 아침을 거른다.");
+            handleAns10(sc); // 아침을 거른다
 
         } else {
             System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
@@ -121,7 +123,7 @@ public class Main {
         }
     }
 
-    // 오전 9시 기상 후 바로 씻지 않은 뒤 상황 선택
+    // 오전 9시 기상 후 씻지 않은 뒤 상황 선택
     private static void handleAns6(Scanner sc) {
         System.out.println("\n\nQ.역시 백수 오윤환, 침대에서 뒹굴거리던 중 배가 고파옵니다. 오늘의 아침 메뉴로 무엇을 먹을까요?" +
                 "\n1.냉장고에 있는 반찬 아무거나 대충 먹는다    2.편의점에서 맛있는 참치 가득 유부초밥을 사와 먹는다");
@@ -129,12 +131,12 @@ public class Main {
         int answer6 = sc.nextInt();
 
         if (answer6 == 1) {
-            System.out.println("백수지만 그래도 아직 사람입니다. 오윤환은 곧장 씻습니다.");
-            handleAns11(sc); // 1번 선택에 대한 다음 질문으로 이동
+            System.out.println("통장 잔고를 보고 한숨이 나오는 오윤환, 냉장고에 있는 반찬을 아무거나 먹는다.");
+            handleAns11(sc); // 냉장고 반찬 먹기
 
         } else if (answer6 == 2) {
-            System.out.println("역시 백수는 사람 취급을 하면 안 됩니다. 오윤환은 바로 씻지 않고 밍기적 침대에서 뒹굴거립니다.");
-            handleAns12(sc); // 2번 선택에 대한 질문으로 이동
+            System.out.println("최근 편의점 참치 가득 유부초밥에 빠진 오윤환, 오늘도 텅장 잔고를 털어 유부초밥을 먹는다.");
+            handleAns12(sc); // 유부초밥 먹기
 
         } else {
             System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
@@ -144,12 +146,110 @@ public class Main {
 
     // 오후 2시 기상 후 바로 씻은 뒤 상황 선택
     private static void handleAns7(Scanner sc) {
+        System.out.println("\n\nQ.비록 늦게 일어났지만 양심은 있는지 바로 씻고 나온 오윤환, 허기진 배를 채우기 위해 점심을 먹으려고 합니다. 무엇을 먹을까요?" +
+                           "\n1.집에 있는 밥을 먹는다    2.배달을 시켜 먹는다.");
+
+        int answer7 = sc.nextInt();
+
+        if (answer7 == 1) {
+            System.out.println("잔고에 돈이 없는 백수 오윤환, 대충 집에 있는 반찬으로 끼니를 떼운다.");
+            handleAns13(sc);
+
+        } else if (answer7 == 2) {
+            System.out.println("간당간당한 잔고지만 맛있는 밥은 먹어야 하는 백수 오윤환, 배달 어플을 켜본다.");
+            handleAns14(sc);
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns7(sc); // 다시 질문으로 되돌아 감
+        }
 
     }
-
+    
     // 오후 2시 기상 후 바로 씻지 않은 뒤 상황 선택
     private static void handleAns8(Scanner sc) {
+        System.out.println("\n\nQ.백수답게 늦게 일어난 후 씻지도 않은 오윤환, 무엇을 할까요?" +
+                "\n1.트위치를 본다    2.오늘은 쿠팡 알바를 가는 날이었다, 밥을 먹자");
+
+        int answer8 = sc.nextInt();
+
+        if (answer8 == 1) {
+            System.out.println("백수의 엘리트 코스, 늦잠 후 바로 트위치 보기를 시전하는 오윤환.");
+            handleAns14(sc);
+
+        } else if (answer8 == 2) {
+            System.out.println("오늘은 쿠팡 알바를 가는 날이었다, 가기 전 밥을 챙겨 먹자.");
+            handleAns15(sc);
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns8(sc); // 다시 질문으로 되돌아 감
+        }
+
     }
+    
+    // 오전 9시 씻고 아침 먹은 후 상황 선택
+    private static void handleAns9(Scanner sc) {
+        System.out.println("\n\nQ.집밥으로 든든히 배를 채운 오윤환, 오늘의 일정을 확인 해본다. 오늘의 일정은 무엇일까?" +
+                "\n1.오랜만에 밖에 나가 기분 전환을 한다    2. 언제까지 백수로 살 것인가, 공부를 하자");
 
+        int answer9 = sc.nextInt();
 
-} // end of public class Main
+        if (answer9 == 1) {
+            System.out.println("알바 갈 때를 제외하고 늘 집에만 있는 방구석 백수 오윤환, 오늘은 외출을 한다.");
+            handleAns16(sc); // 외출
+
+        } else if (answer9 == 2) {
+            System.out.println("백수 탈출을 기원하며 공부를 하기로 결심한 오윤환.");
+            handleAns17(sc); // 공부
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns9(sc); // 다시 질문으로 되돌아 감
+        }
+
+    }
+    
+    // 오전 9시 씻고 아침 거른 후 상황 선택
+    private static void handleAns10(Scanner sc) {
+        System.out.println("\n\nQ.평소 아침을 안 먹는 오윤환, 오늘도 아침을 거르고 할 일을 체크 한다. 이제 무엇을 할까?" +
+                           "\n1.일찍 일어났으니 부지런히 방 청소를 하자    2.집 밖을 잘 안 나가지만 오늘은 산책을 해보자");
+
+        int answer10 = sc.nextInt();
+
+        if (answer10 == 1) {
+            System.out.println("요즘 방 청소를 부지런히 하는 오윤환, 열심히 방 청소를 한다.");
+            handleAns18(sc); // 방 청소
+
+        } else if (answer10 == 2) {
+            System.out.println("부지런한 하루를 보내고 있는 오윤환, 상쾌하게 산책을 한다.");
+            handleAns19(sc); // 공부
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns10(sc); // 다시 질문으로 되돌아 감
+        }
+
+    }
+    
+    // 오전 9시 안 씻고 집 밥 먹은 후 상황 선택
+    private static void handleAns11(Scanner sc) {
+        System.out.println("\n\nQ.근본 집 밥으로 배를 든든히 채운 오윤환, 일찍 일어난 김에 공부를 하고자 한다. 어디서 공부를 할까?" +
+                           "\n1.집에서 공부를 한다    2.자주 가던 카페에 가서 공부를 한다");
+
+        int answer11 = sc.nextInt();
+
+        if (answer11 == 1) {
+            System.out.println("통장 잔고를 보고 한숨이 나오는 오윤환, 냉장고에 있는 반찬을 아무거나 먹는다.");
+            handleAns20(sc); // 냉장고 반찬 먹기
+
+        } else if (answer11 == 2) {
+            System.out.println("최근 편의점 참치 가득 유부초밥에 빠진 오윤환, 오늘도 텅장 잔고를 털어 유부초밥을 먹는다.");
+            handleAns21(sc); // 유부초밥 먹기
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns11(sc); // 다시 질문으로 되돌아 감
+        }
+    }
+} // end of public class simulation.Main
