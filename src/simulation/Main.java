@@ -240,12 +240,12 @@ public class Main {
         int answer11 = sc.nextInt();
 
         if (answer11 == 1) {
-            System.out.println("통장 잔고를 보고 한숨이 나오는 오윤환, 냉장고에 있는 반찬을 아무거나 먹는다.");
-            handleAns20(sc); // 냉장고 반찬 먹기
+            System.out.println("더블모니터가 가능한 집에서 공부하는게 좋은 오윤환, 오늘은 집에서 공부를 하자.");
+            handleAns20(sc); // 집에서 공부
 
         } else if (answer11 == 2) {
-            System.out.println("최근 편의점 참치 가득 유부초밥에 빠진 오윤환, 오늘도 텅장 잔고를 털어 유부초밥을 먹는다.");
-            handleAns21(sc); // 유부초밥 먹기
+            System.out.println("집에 있으면 눕고싶어진다, 카페에서 공부를 하자.");
+            handleAns21(sc); // 카페 공부
 
         } else {
             System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
