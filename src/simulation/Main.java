@@ -174,11 +174,11 @@ public class Main {
         int answer8 = sc.nextInt();
 
         if (answer8 == 1) {
-            System.out.println("백수의 엘리트 코스, 늦잠 후 바로 트위치 보기를 시전하는 오윤환.");
+            System.out.println("백수의 엘리트 코스, 늦잠 후 바로 트위치 보기를 시전하는 백수 오윤환.");
             handleAns15(sc);
 
         } else if (answer8 == 2) {
-            System.out.println("오늘은 쿠팡 알바를 가는 날이었다, 가기 전 밥을 챙겨 먹자.");
+            System.out.println("잊고 있었다, 오늘은 쿠팡 알바를 가는 날이다, 가기 전 밥을 챙겨 먹는 백수 오윤환.");
             handleAns16(sc);
 
         } else {
@@ -276,7 +276,7 @@ public class Main {
 
     }
 
-    // 오후 2시 씻고 집 밥
+    // 오후 2시 씻고 집 밥 이후
     private static void handleAns13(Scanner sc) {
         System.out.println("\n\nQ.집에 있는 밥으로 대충 끼니를 해결한 오윤환, 이제 무엇을 할까요?" +
                            "\n1.방에 먼지가 가득 쌓였다, 방청소를 하자    2.밥은 먹었지만 입이 심심하다, 간식을 먹자");
@@ -298,7 +298,7 @@ public class Main {
 
     }
 
-    // 오후 2시 씻고 배달
+    // 오후 2시 씻고 배달메뉴 선택 이후
     private static void handleAns14(Scanner sc) {
         System.out.println("\n\nQ.배달 음식이 땡기는 백수 오윤환, 오늘은 어떤 메뉴를 주문할까?" +
                 "\n1.한동안 먹고 싶었던 신전 떡볶이를 주문하자    2.첫 끼는 든든하게! 목살구이와 볶음밥 세트를 주문하자 ");
@@ -316,6 +316,92 @@ public class Main {
         } else {
             System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
             handleAns14(sc);
+        }
+    }
+
+    // 오후 2시 안 씻고 바로 트위치 이후
+    private static void handleAns15(Scanner sc) {
+        System.out.println("\n\nQ.밥을 먹고 바로 침대에 누워 트위치에 들어간 백수 오윤환, 어떤 방송을 볼까?" +
+                "\n1.자주 보던 예쁜 누나의 피아노 방송을 보자    2.최근 보기 시작한 노래하는 버츄얼 스트리머의 방송을 보자");
+
+        int answer15 = sc.nextInt();
+
+        if (answer15 == 1) {
+            System.out.println("백수 오윤환은 신청곡을 잘 받아주는 예쁜 누나의 피아노 방송을 보기 시작한다.");
+            handleAns29(sc);
+
+        } else if (answer15 == 2) {
+            System.out.println("최근 폭룡적으로 노래를 잘 하는 버츄얼 스트리머에 빠진 백수 오윤환, 바로 방송을 보기 시작한다.");
+            handleAns30(sc);
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns15(sc);
+        }
+    }
+
+    // 오후 2시 안 씻고 밥 이후
+    private static void handleAns16(Scanner sc) {
+        System.out.println("\n\nQ.급히 식사를 마친 백수 오윤환, 알바 출근 전까지 1시간 정도가 남았다, 출근 전까지 무엇을 할까?" +
+                "\n1.일단 씻고 카페에서 음료를 사오자    2.일단 씻고 방청소를 해두자");
+
+        int answer16 = sc.nextInt();
+
+        if (answer16 == 1) {
+            System.out.println("카페에서 음료를 사오기로 결심한 백수 오윤환, 대충 씻은 후 비교적 저렴한 컴포즈 커피로 향한다.");
+            handleAns31(sc);
+
+        } else if (answer16 == 2) {
+            System.out.println("출근 전 후다닥 씻은 후 방청소를 시작하는 백수 오윤환.");
+            handleAns32(sc);
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns16(sc); // 다시 질문으로 되돌아 감
+        }
+
+    }
+
+    // 오전 9 밥 씻고 밥 이후 상황
+    private static void handleAns17(Scanner sc) {
+        System.out.println("\n\nQ.기분 전환을 위해 외출을 준비한다, 오늘은 어떤 옷을 입을까?" +
+                "\n1.흑청+후드+코트+반스    2. 분홍니트+연청+패딩+반스");
+
+        int answer17 = sc.nextInt();
+
+        if (answer17 == 1) {
+            System.out.println("역시 옷은 어두운 색과 편한 옷이 좋다, 흑청+후드+코트+반스 를 입고 밖으로 나선다.");
+            handleAns33(sc); // 외출
+
+        } else if (answer17 == 2) {
+            System.out.println("최근 칙칙한 옷만 입던 오윤환, 오랜만에 분홍니트+연청+패딩+반스 를 입고 밖으로 나선다.");
+            handleAns34(sc); // 공부
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns17(sc); // 다시 질문으로 되돌아 감
+        }
+
+    }
+
+    // 오전 9시 밥 씻고 공부 이후
+    private static void handleAns18(Scanner sc) {
+        System.out.println("\n\nQ.오늘은 공부를 하기로 결심한 백수 오윤환, ?" +
+                "\n1.흑청+후드+코트+반스    2. 분홍니트+연청+패딩+반스");
+
+        int answer18 = sc.nextInt();
+
+        if (answer18 == 1) {
+            System.out.println("");
+            handleAns35(sc);
+
+        } else if (answer18 == 2) {
+            System.out.println("");
+            handleAns36(sc);
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns18(sc);
         }
     }
 
