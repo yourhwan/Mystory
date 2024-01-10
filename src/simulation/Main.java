@@ -339,28 +339,8 @@ public class Main {
         }
     }
 
-    private static void handleAns30(Scanner sc) {
-        System.out.println("\n\nQ.열심히 노래를 부르고 있는 스트리머, 오늘도 신청곡을 보내고싶다. 어떤 곡을 신청할까?" +
-                "\n1.박정현의 꿈에는 못참는다, 바로 신청하자    2.트수라면 못참는다, 유우리의 베텔기우스를 신청하자");
-
-        int answer30 = sc.nextInt();
-
-        if (answer30 == 1) {
-            System.out.println("박정현의 꿈에를 신청 후 열심히 감상하는 백수 오윤환, 눈물이 또르르 흐른다.");
-            handleAns59(sc);
-
-        } else if (answer30 == 2) {
-            System.out.println("역시 일본의 락은 언제 들어도 좋다, 백수 오윤환은 오늘도 트수력이 증가했다.");
-            handleAns60(sc);
-
-        } else {
-            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
-            handleAns30(sc);
-        }
-    }
 
     // 오후 2시 안 씻고 밥 이후
-
     private static void handleAns16(Scanner sc) {
         System.out.println("\n\nQ.급히 식사를 마친 백수 오윤환, 알바 출근 전까지 1시간 정도가 남았다, 출근 전까지 무엇을 할까?" +
                 "\n1.일단 씻고 카페에서 음료를 사오자    2.일단 씻고 방청소를 해두자");
@@ -381,10 +361,11 @@ public class Main {
         }
 
     }
-    // 오전 9 밥 씻고 밥 이후 상황
+
+    // 오전 9 밥 씻고 밥 기분전환 이후
     private static void handleAns17(Scanner sc) {
         System.out.println("\n\nQ.기분 전환을 위해 외출을 준비한다, 오늘은 어떤 옷을 입을까?" +
-                "\n1.흑청+후드+코트+반스    2. 분홍니트+연청+패딩+반스");
+                "\n1.흑청+후드+코트+반스    2.분홍니트+연청+패딩+반스");
 
         int answer17 = sc.nextInt();
 
@@ -402,6 +383,7 @@ public class Main {
         }
 
     }
+
 
     // 오전 9시 밥 씻고 공부결정 이후
     private static void handleAns18(Scanner sc) {
@@ -435,7 +417,7 @@ public class Main {
             handleAns37(sc); // 데스크 청소
 
         } else if (answer19 == 2) {
-            System.out.println("청소기를 열심히 돌리는 백수 오윤환, 카펫은 돌돌이로 깔끔하게 문질러주니 어느새 꺠끗해졌다.");
+            System.out.println("청소기를 열심히 돌리는 백수 오윤환, 카펫은 돌돌이로 깔끔하게 문질러주니 어느새 깨끗해졌다.");
             handleAns38(sc); // 바닥 청소
 
         } else {
@@ -464,28 +446,26 @@ public class Main {
             handleAns20(sc);
         }
 
-
     }
 
     private static void handleAns21(Scanner sc) {
-        System.out.println("\n\nQ.공부를 시작한 백수 오윤환, 오늘은 어떤 것을 공부할까?" +
+        System.out.println("\n\nQ.집에서 공부를 시작한 백수 오윤환, 오늘은 어떤 것을 공부할까?" +
                 "\n1.솔직히 프로젝트를 시작하기엔 엄두가 안 난다, 알고리즘 공부를 하자    2.오늘은 다 까먹은 기초를 다져보자, 자바의 정석을 보며 문법 공부를 하자");
 
         int answer21 = sc.nextInt();
 
         if (answer21 == 1) {
-            System.out.println("요즘 방 청소를 부지런히 하는 오윤환, 열심히 방 청소를 한다.");
+            System.out.println("프로젝트를 하기엔 겁이 나는 백수 오윤환, 우선 알고리즘이라도 공부를 한다.");
             handleAns41(sc); // 알고리즘
 
         } else if (answer21 == 2) {
-            System.out.println("부지런한 하루를 보내고 있는 오윤환, 상쾌하게 산책을 한다.");
+            System.out.println("오랜기간 공부를 제대로 안하며 기초 문법들도 까먹은 백수 오윤환, 자바의 정석 책을 보며 기초문법 공부를 한다.");
             handleAns42(sc); // 자바정석
 
         } else {
             System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
             handleAns21(sc);
         }
-
 
     }
 
@@ -610,7 +590,6 @@ public class Main {
             handleAns27(sc);
         }
     }
-
     private static void handleAns28(Scanner sc) {
         System.out.println("\n\nQ.목살구이와 볶음밥을 야무지게 먹어치운 백수 오윤환, 어느덧 오후 4시다. 이제 무엇을 할까?" +
                 "\n1.양심이 있다면 공부를 하자    2.오늘은 공부를 쉬고(사실 자주 쉼;;), 퇴근한 엄마와 같이 장을 보러 가자");
@@ -618,7 +597,7 @@ public class Main {
         int answer28 = sc.nextInt();
 
         if (answer28 == 1) {
-            System.out.println("생각이 아예 없진 않은지 공부를 하기 위해 책상에 앉은 백수 오윤환.");
+            System.out.println("생각이 아예 없진 않은가보다, 공부를 하기 위해 책상에 앉은 백수 오윤환.");
             handleAns55(sc);
 
         } else if (answer28 == 2) {
@@ -630,7 +609,6 @@ public class Main {
             handleAns28(sc);
         }
     }
-
     private static void handleAns29(Scanner sc) {
         System.out.println("\n\nQ.피아노 방송을 보기 시작한 백수 오윤환, 오늘은 듣고싶은 곡을 신청하려고 한다, 어떤 노래를 신청할까?" +
                 "\n1.역시 피아노는 재즈가 제 맛이지, Cheek To Cheek을 신청하자    2.근본 이루마의 river flows in you를 신청하자");
@@ -648,6 +626,265 @@ public class Main {
         } else {
             System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
             handleAns29(sc);
+        }
+    }
+
+    private static void handleAns30(Scanner sc) {
+        System.out.println("\n\nQ.열심히 노래를 부르고 있는 스트리머, 오늘도 신청곡을 보내고싶다. 어떤 곡을 신청할까?" +
+                "\n1.박정현의 꿈에는 못참는다, 바로 신청하자    2.트수라면 못참는다, 유우리의 베텔기우스를 신청하자");
+
+        int answer30 = sc.nextInt();
+
+        if (answer30 == 1) {
+            System.out.println("박정현의 꿈에를 신청 후 열심히 감상하는 백수 오윤환, 눈물이 또르르 흐른다.");
+            handleAns59(sc); // 박정현 꿈에
+
+        } else if (answer30 == 2) {
+            System.out.println("역시 일본의 락은 언제 들어도 좋다, 백수 오윤환은 오늘도 트수력이 증가했다.");
+            handleAns60(sc); // 유우리 베텔기우스
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns30(sc);
+        }
+    }
+    private static void handleAns31(Scanner sc) {
+        System.out.println("\n\nQ.컴포즈 커피에 도착했다, 아이스 아메리카노와 아이스 흑당라떼 중 고민이 된다 무엇을 마실까?" +
+                "\n1.깔끔한 근본 아이스 아메리카노를 마시자    2.달달한 아이스 흑당라떼를 마시자");
+
+        int answer31 = sc.nextInt();
+
+        if (answer31 == 1) {
+            System.out.println("근본 아이스 아메리카노를 사와 맛있게 마신 오윤환, 출근시간이 되어, 셔틀버스를 타고 쿠팡 물류센터에 도착했다.");
+            handleAns61(sc); // 아메리카노, 쿠팡
+
+        } else if (answer31 == 2) {
+            System.out.println("달달한 아이스 흑당라떼를 사와 맛있게 마신 오윤환, 출근시간이 되어, 셔틀버스를 타고 쿠팡 물류센터에 도착했다.");
+            handleAns62(sc); // 흑당라떼, 쿠팡
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns31(sc);
+        }
+    }
+
+    private static void handleAns32(Scanner sc) {
+        System.out.println("\n\nQ.방청소를 시작한 백수 오윤환, 출근 전까지 제대로 청소하기엔 시간이 촉박해서 간단히 청소를 해야할 거 같다. 어떻게 청소를 할까?" +
+                "\n1.데스크 청소만 하고 출근하자    2.바닥이랑 카펫만 청소하고 출근하자");
+
+        int answer32 = sc.nextInt();
+
+        if (answer32 == 1) {
+            System.out.println("시간이 촉박한 관계로 데스크 청소만 한 뒤 쿠팡 물류센터로 출근한 백수 오윤환.");
+            handleAns63(sc); // 데스크 청소 후 쿠팡
+
+        } else if (answer32 == 2) {
+            System.out.println("시간이 촉박한 관계로 바닥과 카펫 청소만 한 뒤 쿠팡 물류센터로 출근한 백수 오윤환.");
+            handleAns64(sc); // 바닥, 카펫 청소 후 쿠팡
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns32(sc); // 다시 질문으로 되돌아 감
+        }
+    }
+
+    private static void handleAns33(Scanner sc) {
+        System.out.println("\n\nQ.흑청+후드+코트+반스를 입고 나온 백수 오윤환, 오늘 옷에 나름 만족 중이다. 무계획으로 나왔기 때문에 행선지를 정해야 한다. 어디로 갈까?" +
+                "\n1.솔직히 갈 곳이 없다, 일단 카페로 가자    2.오랜만에 스트레스나 풀자, 코인노래방으로 간다");
+
+        int answer33 = sc.nextInt();
+
+        if (answer33 == 1) {
+            System.out.println("백수가 가봤자 어딜 갈까... 일단 카페로 향하는 백수 오윤환.");
+            handleAns65(sc); // 일단 카페
+
+        } else if (answer33 == 2) {
+            System.out.println("백수 오윤환이 유일하게 좋아하는 유흥(?)인 코인노래방으로 향한다.");
+            handleAns66(sc); // 코인노래방
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns33(sc); // 다시 질문으로 되돌아 감
+        }
+    }
+
+    private static void handleAns34(Scanner sc) {
+        System.out.println("\n\nQ.분홍니트+연청+패딩+반스를 입고 밖으로 나선 백수 오윤환, 행선지를 정하지 못했는데 어디로 갈까?" +
+                "\n1.오랜만에 좋아하는 장소인 서촌이나 가보자    2.소방관 발령 대기 중인 친구가 자취방에 놀러오라고 한다, 친구의 자취방으로 놀러가자");
+
+        int answer34 = sc.nextInt();
+
+        if (answer34 == 1) {
+            System.out.println("고즈넉한 분위기를 좋아하는 백수 오윤환, 서촌으로 향한다.");
+            handleAns67(sc); // 서촌
+
+        } else if (answer34 == 2) {
+            System.out.println("발령 대기 중이라 한가한 친구의 연락을 받고 친구의 자취방으로 향하는 백수 오윤환.");
+            handleAns68(sc); // 친구 자취방
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns34(sc);
+        }
+    }
+
+    private static void handleAns35(Scanner sc) {
+        System.out.println("\n\nQ.오늘 착장이 꽤나 마음에 든 백수 오윤환, 공부를 하기 위해 카페를 가려고 한다. 어디서 공부를 할까?" +
+                "\n1.집에서 가까운 동네 엔젤리너스로 가자    2.기분전환 겸 학원 다닐 때 자주 갔던 홍대입구역 엔젤리너스로 가자");
+
+        int answer35 = sc.nextInt();
+
+        if (answer35 == 1) {
+            System.out.println("공부는 역시 집 앞 엔젤리너스가 제일 잘 된다, 동네 엔젤리너스로 향하는 백수 오윤환.");
+            handleAns69(sc); // 집 앞 엔젤리너스
+
+        } else if (answer35 == 2) {
+            System.out.println("기분전환 겸 동네를 벗어나 홍대 엔젤리너스로 향하는 백수 오윤환.");
+            handleAns70(sc); // 홍대 엔젤리너스
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns35(sc);
+        }
+    }
+
+    private static void handleAns36(Scanner sc) {
+        System.out.println("\n\nQ.오랜만에 좋아하는 옷도 입고 기분이 좋은 백수 오윤환, 오늘은 어디서 공부를 할까?" +
+                "\n1.오랜만에 좋아하는 옷도 입었으니, 분위기 좋은 동네 카페에서 공부를 하자    2.늘 가던 공부하기 좋은 동네 엔젤리너스로 가자");
+
+        int answer36 = sc.nextInt();
+
+        if (answer36 == 1) {
+            System.out.println("커피와 노래에 진심인 사장님이 운영하는 카페로 향하는 백수 오윤환, 좋은 노래를 들으며 공부할 생각에 설렌다.");
+            handleAns71(sc); // 분위기 좋은 카페
+
+        } else if (answer36 == 2) {
+            System.out.println("공부하기엔 동네 엔젤리너스가 최고다, 공부 맛집인 동네 엔젤리너스로 향하는 백수 오윤환.");
+            handleAns72(sc); // 동네 엔젤리너스
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns36(sc);
+        }
+    }
+
+    private static void handleAns37(Scanner sc) {
+        System.out.println("\n\nQ.열심히 데스크 청소부터 시작해 바닥과 카펫 청소까지 끝낸 백수 오윤환, 어느덧 점심시간이다. 뭘 먹을까?" +
+                "\n1.오늘은 라면으로 간단히 해결하자    2.어차피 밖에 나갈 예정이다 밖에서 사먹자");
+
+        int answer37 = sc.nextInt();
+
+        if (answer37 == 1) {
+            System.out.println("백수의 주식인 라면으로 점심을 해결한 백수 오윤환, 이제 무엇을 할지 고민한다.");
+            handleAns73(sc); // 라면 먹음
+
+        } else if (answer37 == 2) {
+            System.out.println("밖에 나갈 예정이었기에 나가서 사먹기로 결심한 백수 오윤환, 집 밖으로 나선다.");
+            handleAns74(sc); // 집밖에서 사먹기
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns37(sc); // 다시 질문으로 되돌아 감
+        }
+    }
+
+    private static void handleAns38(Scanner sc) {
+        System.out.println("\n\nQ.바닥에 있는 의문의 털들과 책상 위 먼지까지 모두 청소한 백수 오윤환, 점심까지 간단히 챙겨먹었다. 이제 무엇을 할까?" +
+                "\n1.이제는 취업을 위해 공부를 해야할 때, 집에서 공부를 하자    2.이제는 취업을 위해 공부를 해야할 때, 카페에 가서 공부를 하자");
+
+        int answer38 = sc.nextInt();
+
+        if (answer38 == 1) {
+            System.out.println("그래도 취업 생각은 있는지 공부를 시작하는 백수 오윤환, 책상에 앉아 노트북을 켠다.");
+            handleAns75(sc); // 집에서 공부
+
+        } else if (answer38 == 2) {
+            System.out.println("그래도 취업 생각은 있는지 카페에서 공부를 하기로 결심한 백수 오윤환, 짐을 챙겨 밖으로 나간다.");
+            handleAns76(sc); // 카페 공부
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns38(sc); // 다시 질문으로 되돌아 감
+        }
+    }
+
+    private static void handleAns39(Scanner sc) {
+        System.out.println("\n\nQ.벌벌 떨며 아이스 아메리카노를 가지고 집으로 돌아온 백수 오윤환, 배가 고픈지 집에 있는 밥도 챙겨 먹고 커피까지 야무지게 마신다. 이제 무엇을 할까?" +
+                "\n1.오늘은 여유로운 하루를 보내고싶다, 오랜만에 보고싶던 애니를 보자    2.부지런한 하루를 보내는 만큼 공부도 하는 갓생을 살자");
+
+        int answer39 = sc.nextInt();
+
+        if (answer39 == 1) {
+            System.out.println("꽤 오랜 시간 참았던 애니를 보려는 백수 오윤환, 라프텔에 들어간다.");
+            handleAns77(sc); // 애니 보기
+
+        } else if (answer39 == 2) {
+            System.out.println("갓생을 살기로 결심한 백수 오윤환, 공부를 하기 위해 짐을 챙겨 집 앞 카페로 향한다.");
+            handleAns78(sc); // 공부, 집 앞 카페
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns39(sc);
+        }
+    }
+
+    private static void handleAns40(Scanner sc) {
+        System.out.println("\n\nQ.산책을 마치고 집으로 돌아온 백수 오윤환, 배가 고팠는지 허겁지겁 아점까지 챙겨 먹었다. 이제 무엇을 할까?" +
+                "\n1.소방관 발령대기 중인 친구에게 연락이 왔다, 친구의 자취방으로 놀러간다.    2.부지런한 하루를 보내는 만큼 공부도 하는 갓생을 살자");
+
+        int answer40 = sc.nextInt();
+
+        if (answer40 == 1) {
+            System.out.println("소방관 발령대기 중이라 한가한 친구의 연락을 받고 친구의 자취방으로 향하는 백수 오윤환.");
+            handleAns68(sc); // 친구 자취방
+
+        } else if (answer40 == 2) {
+            System.out.println("갓생을 살기로 결심한 백수 오윤환, 공부를 하기 위해 짐을 챙겨 집 앞 카페로 향한다.");
+            handleAns78(sc); // 공부, 집 앞 카페
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns40(sc); // 다시 질문으로 되돌아 감
+        }
+    }
+
+    private static void handleAns41(Scanner sc) {
+        System.out.println("\n\nQ.나름대로 열심히 알고리즘 공부를 하는 백수 오윤환, 어느덧 시간이 꽤나 흘렀다. 곧 엄마가 장을 보러가는데 같이 갈까?" +
+                "\n1.엄마가 늘 혼자 무거운 짐을 들고 오는게 마음에 걸린다, 같이 가자    2.오늘은 집중이 잘 되는 날이다, 엄마에게 미안하지만 더 공부하자");
+
+        int answer41 = sc.nextInt();
+
+        if (answer41 == 1) {
+            System.out.println("늘 엄마가 마음에 걸렸던 백수 오윤환, 대충 씻고 오늘은 엄마의 장보기를 도와준다.");
+            handleAns56(sc); // 엄마와 장보기
+
+        } else if (answer41 == 2) {
+            System.out.println("오늘따라 공부가 잘 되는 백수 오윤환, 잠시 쉬는 시간 동안 빠르게 씻고 공부를 더 한다.");
+            handleAns79(sc); // 공부 더 하기
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns41(sc);
+        }
+    }
+
+    private static void handleAns42(Scanner sc) {
+        System.out.println("\n\nQ.자바의 정석을 보며 공부했던 기초문법을 복기하는 백수 오윤환, 어느덧 점심시간이다. 밥으로 뭘 먹을까?" +
+                "\n1.라면으로 간단히 해결하자    2.공부 후 밖에 나갈 예정이었다. 밖에서 사먹자");
+
+        int answer42 = sc.nextInt();
+
+        if (answer42 == 1) {
+            System.out.println("백수의 주식인 라면으로 점심을 해결한 백수 오윤환, 이제 무엇을 할지 고민한다.");
+            handleAns73(sc); // 라면 먹음
+
+        } else if (answer42 == 2) {
+            System.out.println("공부 후 밖에 나갈 예정이었기에 나가서 사먹기로 결심한 백수 오윤환, 집 밖으로 나선다.");
+            handleAns74(sc); // 집밖에서 사먹기
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns42(sc);
         }
     }
 
