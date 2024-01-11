@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-
+/*
         System.out.println("해당 시뮬레이션은 실화에 기반 했음을 알려 드립니다."
                          + "\n모든 답변은 주어지는 보기의 번호를 입력해 주시면 됩니다.\n");
 
@@ -539,11 +539,11 @@ public class Main {
 
         if (answer25 == 1) {
             System.out.println("오늘은 해야 할 일이 많을 수도 있으니 방청소만 제대로 하자, 방청소를 하는 백수 오윤환.");
-            handleAns49(sc); // 방청소만
+           // handleAns49(sc); // 방청소만
 
         } else if (answer25 == 2) {
             System.out.println("꼭 할 일 없는 애들이 청소를 하면 일을 벌린다, 거실청소까지 해버리는 백수 오윤환.");
-            handleAns50(sc); // 거실청소까지
+           // handleAns50(sc); // 거실청소까지
 
         } else {
             System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
@@ -590,6 +590,7 @@ public class Main {
             handleAns27(sc);
         }
     }
+
     private static void handleAns28(Scanner sc) {
         System.out.println("\n\nQ.목살구이와 볶음밥을 야무지게 먹어치운 백수 오윤환, 어느덧 오후 4시다. 이제 무엇을 할까?" +
                 "\n1.양심이 있다면 공부를 하자    2.오늘은 공부를 쉬고(사실 자주 쉼;;), 퇴근한 엄마와 같이 장을 보러 가자");
@@ -609,6 +610,7 @@ public class Main {
             handleAns28(sc);
         }
     }
+
     private static void handleAns29(Scanner sc) {
         System.out.println("\n\nQ.피아노 방송을 보기 시작한 백수 오윤환, 오늘은 듣고싶은 곡을 신청하려고 한다, 어떤 노래를 신청할까?" +
                 "\n1.역시 피아노는 재즈가 제 맛이지, Cheek To Cheek을 신청하자    2.근본 이루마의 river flows in you를 신청하자");
@@ -648,6 +650,7 @@ public class Main {
             handleAns30(sc);
         }
     }
+
     private static void handleAns31(Scanner sc) {
         System.out.println("\n\nQ.컴포즈 커피에 도착했다, 아이스 아메리카노와 아이스 흑당라떼 중 고민이 된다 무엇을 마실까?" +
                 "\n1.깔끔한 근본 아이스 아메리카노를 마시자    2.달달한 아이스 흑당라떼를 마시자");
@@ -707,7 +710,6 @@ public class Main {
             handleAns33(sc); // 다시 질문으로 되돌아 감
         }
     }
-
     private static void handleAns34(Scanner sc) {
         System.out.println("\n\nQ.분홍니트+연청+패딩+반스를 입고 밖으로 나선 백수 오윤환, 행선지를 정하지 못했는데 어디로 갈까?" +
                 "\n1.오랜만에 좋아하는 장소인 서촌이나 가보자    2.소방관 발령 대기 중인 친구가 자취방에 놀러오라고 한다, 친구의 자취방으로 놀러가자");
@@ -727,7 +729,6 @@ public class Main {
             handleAns34(sc);
         }
     }
-
     private static void handleAns35(Scanner sc) {
         System.out.println("\n\nQ.오늘 착장이 꽤나 마음에 든 백수 오윤환, 공부를 하기 위해 카페를 가려고 한다. 어디서 공부를 할까?" +
                 "\n1.집에서 가까운 동네 엔젤리너스로 가자    2.기분전환 겸 학원 다닐 때 자주 갔던 홍대입구역 엔젤리너스로 가자");
@@ -767,7 +768,6 @@ public class Main {
             handleAns36(sc);
         }
     }
-
     private static void handleAns37(Scanner sc) {
         System.out.println("\n\nQ.열심히 데스크 청소부터 시작해 바닥과 카펫 청소까지 끝낸 백수 오윤환, 어느덧 점심시간이다. 뭘 먹을까?" +
                 "\n1.오늘은 라면으로 간단히 해결하자    2.어차피 밖에 나갈 예정이다 밖에서 사먹자");
@@ -888,6 +888,125 @@ public class Main {
         }
     }
 
+    private static void handleAns43(Scanner sc) {
+        System.out.println("\n\nQ.엔젤리너스에 도착한 백수 오윤환, 음료를 주문하려고 한다. 어떤 것을 주문할까?" +
+                "\n1.국룰 아이스 아메리카노    2.달달한 아이스 바닐라 라떼");
 
+        int answer43 = sc.nextInt();
+
+        if (answer43 == 1) {
+            System.out.println("오래 마실 수 있고, 깔끔한 아메리카노를 주문한 백수 오윤환, 커피를 받아 자리에 앉는다.");
+            handleAns80(sc); // 아메리카노
+
+        } else if (answer43 == 2) {
+            System.out.println("달달하고 부드러운 바닐라 라떼를 주문한 백수 오윤환, 커피를 받아 자리에 앉는다.");
+            handleAns81(sc); // 바닐라 라떼
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns43(sc);
+        }
+    }
+
+    private static void handleAns44(Scanner sc) {
+        System.out.println("\n\nQ.스타벅스에 도착한 백수 오윤환, 음료를 주문하려고 한다. 어떤 것을 주문할까?" +
+                "\n1.국룰 아이스 아메리카노    2.달달한 아이스 바닐라 라떼");
+
+        int answer44 = sc.nextInt();
+
+        if (answer44 == 1) {
+            System.out.println("오래 마실 수 있고, 깔끔한 아메리카노를 주문한 백수 오윤환, 커피를 받아 자리에 앉는다.");
+            handleAns80(sc); // 아메리카노
+
+        } else if (answer44 == 2) {
+            System.out.println("달달하고 부드러운 바닐라 라떼를 주문한 백수 오윤환, 커피를 받아 자리에 앉는다.");
+            handleAns81(sc); // 바닐라 라떼
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns44(sc);
+        }
+    }
+
+    private static void handleAns45(Scanner sc) {
+        System.out.println("\n\nQ.역까지 뛰어가 지하철을 타고 홍대에 도착해 사람들을 만난 백수 오윤환, 그들과 무엇을 할까?" +
+                "\n1.카페에 가서 이야기를 나눈다.     2.점심을 먹으며 이야기를 나눈다");
+
+        int answer45 = sc.nextInt();
+
+        if (answer45 == 1) {
+            System.out.println("카페에 가서 이야기를 나누는 백수 오윤환과 사람들, 그동안 있었던 일들을 공유하며 즐거운 시간을 보내는 중이다.");
+            handleAns82(sc); // 역까지 달리기
+
+        } else if (answer45 == 2) {
+            System.out.println("점심을 먹으며 이야기를 나누는 백수 오윤환과 사람들, 그동안 있었던 일들을 공유하며 즐거운 시간을 보내는 중이다.");
+            handleAns83(sc); // 버스 타기
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns45(sc); // 다시 질문으로 되돌아 감
+        }
+    }
+
+    private static void handleAns46(Scanner sc) {
+        System.out.println("\n\nQ.얌전히 버스와 지하철을 타고 홍대에 도착해 사람들을 만난 백수 오윤환, 그들과 무엇을 할까?" +
+                "\n1.카페에 가서 이야기를 나눈다.     2.점심을 먹으며 이야기를 나눈다");
+
+        int answer46 = sc.nextInt();
+
+        if (answer46 == 1) {
+            System.out.println("카페에 가서 이야기를 나누는 백수 오윤환과 사람들, 그동안 있었던 일들을 공유하며 즐거운 시간을 보내는 중이다.");
+            handleAns82(sc); // 역까지 달리기
+
+        } else if (answer46 == 2) {
+            System.out.println("점심을 먹으며 이야기를 나누는 백수 오윤환과 사람들, 그동안 있었던 일들을 공유하며 즐거운 시간을 보내는 중이다.");
+            handleAns83(sc); // 버스 타기
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns46(sc); // 다시 질문으로 되돌아 감
+        }
+    }
+
+    private static void handleAns47(Scanner sc) {
+        System.out.println("\n\nQ.엄마와 집 앞 스타벅스로 향하는 백수 오윤환, 메뉴를 고르고 결제를 하려고 한다. 결제를 할까?" +
+                "\n1.백수여도 엄마와 나왔으니 커피 정도야 살 수 있지    2.백수라 돈이 없다, 철판을 깔고 얻어 먹자");
+
+        int answer47 = sc.nextInt();
+
+        if (answer47 == 1) {
+            System.out.println("엄마에게 맛있는 커피를 사드리고싶은 백수 오윤환, 지갑 사정은 넉넉치 않지만 엄마에게 커피를 사드린다.");
+            handleAns84(sc); // 집 앞 스타벅스
+
+        } else if (answer47 == 2) {
+            System.out.println("커피를 사드리고 싶지만 텅장이슈로 엄마에게 얻어먹는 백수 오윤환.");
+            handleAns85(sc); // 백화점으로
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns24(sc); // 다시 질문으로 되돌아 감
+        }
+    }
+
+    private static void handleAns48(Scanner sc) {
+        System.out.println("\n\nQ.엄마와의 데이트로 백화점에 온 백수 오윤환, 오랜만에 바깥 구경도 즐겁게 하고 커피 한 잔의 여유도 즐겼다. 어느덧 저녁시간, 오늘의 저녁은 어디서 먹을까?" +
+                "\n1.백화점에 온 김에 외식을 하고 들어가자     2.사정이 넉넉하지 않으니 집에서 먹자");
+
+        int answer48 = sc.nextInt();
+
+        if (answer48 == 1) {
+            System.out.println("오랜만에 밖에나와 분위기도 낼 겸 외식을 하기로 한 백수 오윤환 주변 음식점을 둘러본다.");
+            handleAns86(sc); // 집 앞 스타벅스
+
+        } else if (answer48 == 2) {
+            System.out.println("아무래도 백수다보니 지갑 사정이 넉넉하지 못하다, 집에 가서 집밥을 먹기로 했다.");
+            handleAns87(sc); // 백화점으로
+
+        } else {
+            System.out.println("⚠︎알림: 1 또는 2 중에서 선택해야 합니다. 올바른 답변을 입력 해주세요.");
+            handleAns48(sc); // 다시 질문으로 되돌아 감
+        }
+*/
+    }
 
 } // end of public class simulation.Main
