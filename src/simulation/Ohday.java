@@ -271,7 +271,7 @@ public class Ohday {
                     }
                     else { // 오후 2시 재기상
                         System.out.println("마사카... 눈을 뜨니 오후 2시다. 화들짝 놀라 이불을 박차고 나오는 백수 오윤환.");
-                        System.out.println("\nQ.생각보다 시간이 많이 흘러가 당황한 백수 오윤환, 오늘은 미뤄뒀던 공부를 하기로 결심했던 날이다. 집에서 공부를 할지 밖에 나가서 공부를 할지 고민하는 백수 오윤환, 그의 선택은?" +
+                        System.out.println("\nQ.생각보다 시간이 많이 흘러가 당황한 것 같다. 오늘은 미뤄뒀던 공부를 하기로 결심했던 날, 집에서 공부를 할지 밖에 나가서 공부를 할지 고민하는 백수 오윤환, 그의 선택은?" +
                                 "\n1.집에서 공부    2.밖에서 공부");
 
                         int answer14 = sc.nextInt();
@@ -293,9 +293,9 @@ public class Ohday {
                         }
 
                         if (answer14 == 1) { // 집에서 공부
-                            System.out.println("늦게 일어난 만큼 시간을 아껴야겠다는 생각이 든 백수 오윤환, 얼른 책상에 앉아 컴퓨터를 켠다.");
-                            System.out.println("\nQ." +
-                                    "\n1.    2.");
+                            System.out.println("늦게 일어난 만큼 시간을 아껴야겠다는 생각이 든 백수 오윤환, 얼른 책상에 앉아 컴퓨터를 켜고 웬일인지 진득하게 앉아 알고리즘 공부를 한다.");
+                            System.out.println("\nQ.시간이 꽤나 흘렀다. 집중력이 흐트러지기 시작한 백수 오윤환, 밖에 나가서 공부를 더 할지 고민이 된다. 어떻게 할까?" +
+                                    "\n1.카페에서 공부    2.휴식");
 
                             int answer32 = sc.nextInt();
 
@@ -315,18 +315,46 @@ public class Ohday {
                                 }
                             }
 
-                            if (answer32 == 1) { //
-                                System.out.println(".");
+                            if (answer32 == 1) { // 카페에서 공부
+                                System.out.println("오늘은 공부가 꽤나 잘 되는지 흐름을 이어가고싶은 백수 오윤환, 카페에 가서 공부를 더 하기 위해 집 밖으로 나선다.");
 
                             }
-                            else { //
-                                System.out.println(".");
+                            else { // 잠시 휴식
+                                System.out.println("집중력이 떨어졌을 때는 잠시 쉬는 것도 도움이 될 수 있다. 잠시 휴식을 취하는 백수 오윤환.");
 
                             }
                         }
                         else { // 밖에서 공부
                             System.out.println("집에 있으면 어영부영 늦장을 부려 시간을 낭비할 것 같다는 생각이 든 백수 오윤환, 재빠르게 씻은 뒤 아무 옷이나 주워 입고 집 밖으로 나선다.");
+                            System.out.println("\nQ.공부할 카페를 두고 고민하는 백수 오윤환, 선택지엔 두 곳이 있다. 거리가 가까운 스타벅스 그리고 자리도 콘센트도 널널한 엔젤리너스. 어디로 갈까?" +
+                                    "\n1.스타벅스    2.엔젤리너스");
 
+                            int answer33 = sc.nextInt();
+
+                            for (;;) {
+
+                                if (answer33 >= 1 && answer33 <= 2) {
+                                    break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
+                                }
+                                else if (answer33 == 0) {
+                                    System.out.println(answer33+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                    sc.close();
+                                    return;
+                                }
+                                else {
+                                    System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
+                                    answer33 = sc.nextInt();
+                                }
+                            }
+
+                            if (answer33 == 1) { // 스타벅스
+                                System.out.println("횡단보도 하나만 건너면 바로 나오는 스타벅스로 향하는 백수 오윤환, 역시 가까운게 최고다.");
+
+                            }
+                            else { // 엔젤리너스
+                                System.out.println("스타벅스보다 조금 더 멀지만 공부환경으로 최적화 되어있는 엔젤리너스로 향하는 백수 오윤환, 공부하러 자주 가던 곳이 최고다.");
+
+                            }
                         }
                     }
 
@@ -380,11 +408,67 @@ public class Ohday {
 
                         if (answer15 == 1) { // 집밥 먹기
                             System.out.println("미역국과 장조림은 못참지! 아침부터 든든히 밥을 챙겨먹는 백수 오윤환, 맛있는 집밥을 먹어서인지 아침부터 기분이 좋아보인다.");
+                            System.out.println("\nQ.부지런한 아침을 보내고 있는 백수 오윤환은 후식으로 커피를 마시고싶다. 테이크아웃을 하려고 하는데, 어디 카페로 갈까?" +
+                                    "\n1.컴포즈커피    2.메가커피");
 
+                            int answer34 = sc.nextInt();
+
+                            for (;;) {
+
+                                if (answer34 >= 1 && answer34 <= 2) {
+                                    break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
+                                }
+                                else if (answer34 == 0) {
+                                    System.out.println(answer34+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                    sc.close();
+                                    return;
+                                }
+                                else {
+                                    System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
+                                    answer34 = sc.nextInt();
+                                }
+                            }
+
+                            if (answer34 == 1) { // 컴포즈커피
+                                System.out.println("테이크아웃은 역시 가격이 저렴한 카페가 최고다. 심지어 컴포즈의 흑당라떼는 다른 곳보다 훨씬 달달하고 원두향이 진하다. 최애 커피 중 하나인 흑당라떼를 사오기 위해 컴포즈로 향하는 백수 오윤환.");
+
+                            }
+                            else { // 메가커피
+                                System.out.println("테이크아웃은 역시 가격이 저렴한 카페가 최고다. 심지어 메가커피는 4분 거리에 위치해있다. 가성비와 접근성 모두 챙긴 메가커피로 향하는 백수 오윤환.");
+
+                            }
                         }
                         else { // 굶기
                             System.out.println("오늘은 아침을 먹으면 속이 불편할 것만 같다. 아침을 건너뛰는 백수 오윤환, 그의 안식처인 방으로 다시 들어간다.");
+                            System.out.println("\nQ.일찍 일어나 하루를 시작한 백수 오윤환, 오늘따라 오랜만에 서울로 나가 여가생활을 즐기고싶다. 어디로 갈까?" +
+                                    "\n1.한남동    2.서촌");
 
+                            int answer35 = sc.nextInt();
+
+                            for (;;) {
+
+                                if (answer35 >= 1 && answer35 <= 2) {
+                                    break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
+                                }
+                                else if (answer35 == 0) {
+                                    System.out.println(answer35+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                    sc.close();
+                                    return;
+                                }
+                                else {
+                                    System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
+                                    answer35 = sc.nextInt();
+                                }
+                            }
+
+                            if (answer35 == 1) { // 한남동
+                                System.out.println("오랜만에 COS에서 일하며 추억이 쌓인 한남동에 가보려는 백수 오윤환, 평소와 달리 츄리닝이 아닌 데님과 니트 그리고 코드를 입고 한남동으로 향한다.");
+
+                            }
+                            else { // 서촌
+                                System.out.println("예전부터 서촌의 고즈넉한 분위기를 좋아했던 백수 오윤환, 오랜만에 그 분위기를 즐기기 위해 서촌으로 향한다.");
+
+                            }
                         }
                     }
                     else { // 오전 공부
@@ -412,11 +496,67 @@ public class Ohday {
 
                         if (answer16 == 1) { // 알고리즘
                             System.out.println("학원을 마친 후 제대로 공부를 하지 않아 까먹은 문법이 많은 백수 오윤환, 취준에는 알고리즘이 필수라는 이야기를 많이 들어왔을 뿐더러 까먹은 문법들을 복기할 겸 알고리즘을 공부한다.");
+                            System.out.println("\nQ.알고리즘을 공부하며 몰랐던 문제들이 꽤나 있었던 백수 오윤환, 해당 문제들을 블로그에 정리하여 업로드 할지 고민이다. 어떻게 할까?" +
+                                    "\n1.블로그 게시    2.깃허브에 커밋");
 
+                            int answer36 = sc.nextInt();
+
+                            for (;;) {
+
+                                if (answer36 >= 1 && answer36 <= 2) {
+                                    break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
+                                }
+                                else if (answer36 == 0) {
+                                    System.out.println(answer36+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                    sc.close();
+                                    return;
+                                }
+                                else {
+                                    System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
+                                    answer36 = sc.nextInt();
+                                }
+                            }
+
+                            if (answer36 == 1) { // 블로그 게시
+                                System.out.println("알고리즘을 풀며 공부가 되었던 것들을 블로그에 업로드 하는 백수 오윤환, 공부했던 것들을 정리하니 더욱 각인되는 것 같다.");
+
+                            }
+                            else { // 깃허브에 커밋
+                                System.out.println("블로그까지 올릴 필요성은 느끼지 못한 백수 오윤환, 브로그에 올리지 않는 대신 주석을 열심히 달아두고 연동해두었던 깃허브에 커밋을 한다.");
+
+                            }
                         }
                         else { // 인프런 강의 보기
-                            System.out.println("구매해두었던 김영한의 Spring 강의를 봐야겠다는 생각이 든 백수 오윤환, 구매 후 첫 강의시청에 들어간다.");
+                            System.out.println("구매해두었던 김영한의 Spring 강의를 보며 공부를 시작한 백수 오윤환, 열심히 공부를 하는데 강의가 꽤나 마음에 든 것 같다.");
+                            System.out.println("\nQ.어느덧 점시시간이 되었고, 식사를 할 겸 휴식을 갖던 중 점심 메뉴를 고민한다. 오늘의 점심은 무엇을 먹을까?" +
+                                    "\n1.돈카츠    2.마라탕");
 
+                            int answer37 = sc.nextInt();
+
+                            for (;;) {
+
+                                if (answer37 >= 1 && answer37 <= 2) {
+                                    break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
+                                }
+                                else if (answer37 == 0) {
+                                    System.out.println(answer37+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                    sc.close();
+                                    return;
+                                }
+                                else {
+                                    System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
+                                    answer37 = sc.nextInt();
+                                }
+                            }
+
+                            if (answer37 == 1) { // 돈카츠
+                                System.out.println("동네에 꽤나 괜찮은 돈카츠 집이 생긴 것이 생각 난 백수 오윤환, 마침 오후에는 밖에서 공부를 할 예정이었기에 짐을 챙겨 돈카츠 집으로 향한다.");
+
+                            }
+                            else { // 마라탕
+                                System.out.println("얼큰한 국물과 각종 채소 그리고 고기가 들어간 마라탕이 땡기는 백수 오윤환, 마침 오후에는 밖에서 공부를 할 예정이었기에 짐을 챙겨 엔젤리너스 앞 마라탕 가게로 향한다.");
+
+                            }
                         }
                     }
                 }
