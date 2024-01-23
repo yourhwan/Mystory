@@ -2522,7 +2522,7 @@ public class Ohday {
                             if (answer48 == 1) { // LP감상
                                 System.out.println("방 한켠에는 꾸준히 모아온 LP들이 많다, 가끔씩 아무것도 하지 않은 채로 노래 듣기를 좋아하는 백수 오윤환, 오랜만에 음악감상을 한다.");
                                 System.out.println("\nQ.첫 번째로 들을 앨범을 고르는 백수 오윤환, 늘 시작은 R&B soul로 고르는데 세 개의 앨범이 눈에 들어온다. 어떤 앨범을 들을까?" +
-                                        "\n1.D'angelo의 1집    2.Maxwell의 1집    3.Michael Jackson의 첫 싱글");
+                                        "\n1.D'angelo의 1집    2.Maxwell의 1집    3.Michael Jackson의 5집");
 
                                 int answer99 = sc.nextInt();
 
@@ -2606,7 +2606,7 @@ public class Ohday {
                                 else if (answer99 == 2){ // Maxwell의 1집
                                     System.out.println("Maxwell의 1집을 집어들어 재생한다. 특히나 이 앨범에서 Life time이라는 곡을 가장 좋아하는 백수 오윤환, 음악에 심취한 상태로 의자에 앉는다.");
                                     System.out.println("\nQ.앨범을 다 듣고 상당히 만족한 백수 오윤환, 콧노래를 흥얼거리며 무엇을 할지 고민한다. 이제 무엇을 할까?" +
-                                            "\n1.집에서 공부    2.노래 디깅");
+                                            "\n1.노래 디깅    2.공부");
 
                                     int answer101 = sc.nextInt();
 
@@ -2626,11 +2626,11 @@ public class Ohday {
                                         }
                                     }
 
-                                    if (answer101 == 1) { // 집에서 공부
+                                    if (answer101 == 1) { // 노래 디깅
                                         System.out.println("오랜만에 가장 좋아하는 음악을 들을 수 있어서 행복한 백수 오윤환, 음악에 필이 왔으니 곧장 이어서 플레이리스트에 추가할 음악을 디깅한다.");
                                         System.out.println("\nQ.디깅을 하던 중 고민이 생긴 백수 오윤환. 검색해도 나오지 않는 곡과 앨범 커버가 잘못된 것이 꽤나 있으며," +
-                                                "\n기능이 다소 아쉬운 유튜브 뮤직을 해지하고 애플 뮤직으로 넘어갈지 고민하는 백수 오윤환, 그의 선택은?" +
-                                                "\n1.유튜브 뮤직 유지    2.애플 뮤직");
+                                                "\n기능이 다소 아쉬운 유튜브 뮤직을 해지하고 애플 뮤직으로 넘어갈지 고민하는 백수 오윤환, 어떤 구독 서비스를 이용할까?" +
+                                                "\n1.유튜브 뮤직    2.애플 뮤직");
 
                                         int answer102 = sc.nextInt();
 
@@ -2650,25 +2650,19 @@ public class Ohday {
                                             }
                                         }
 
-                                        if (answer102 == 1) { // 저녁을 먹고 일찍 잔다
-                                            System.out.println("공부하느라 배가 많이 고팠던 백수 오윤환, 엄마가 차려둔 저녁을 맛있게 먹고 지쳐 쓰러져 잠에 든다." +
-                                                    "\n오늘 하루를 알차게 보내기 위해 나름대로 최선을 다 했던 백수 오윤환, 전날 아르바이트를 한 뒤 새벽에 들어와 해가 뜰 때서야 잠에 들었던 여파로 일찍 잠에 들었다." +
-                                                    "\n비록 이른 잠에 청하지만 목표했던 공부도 완료했고 나름 알찬 하루를 보냈기 때문에 내일은 더 나은 하루를 보낼 수 있을 거 같다." +
-                                                    "\n-THE END-");
-                                            sc.close();
+                                        if (answer102 == 1) { // 유튜브 뮤직
+                                            System.out.println("유튜브 뮤직을 그대로 사용하기로 결심한 백수 오윤환, 아무래도 유튜브 뮤직은 사람들이 업로드한 커버곡과 같이 비공식 음원도 들을 수 있다는 메리트가 커서 쉽사리 포기할 수 없는 거 같다.");
+
                                         }
-                                        else { // 트위치를 본다.
-                                            System.out.println("오랜만에 장시간 집중해서 공부를 하느라 피곤했던 백수 오윤환, 누워서 음악방송을 보다가 그대로 잠에 든다." +
-                                                    "\n오늘 하루를 알차게 보내기 위해 나름대로 최선을 다 했던 백수 오윤환, 전날 아르바이트를 한 뒤 새벽에 들어와 해가 뜰 때서야 잠에 들었던 여파로 일찍 잠에 들었다." +
-                                                    "\n비록 이른 잠에 청하지만 목표했던 공부도 완료했고 나름 알찬 하루를 보냈기 때문에 내일은 더 나은 하루를 보낼 수 있을 거 같다." +
-                                                    "\n-THE END-");
+                                        else { // 애플 뮤직
+                                            System.out.println("애플 뮤직으로 옮기는 백수 오윤환, 훨씬 많은 음원의 수와 예쁜 인터페이스 그리고 다양한 기능을 제공하는 애플 뮤직이 딥하게 음악을 듣는 백수 오윤환에게 더 합리적인 것 같다.");
 
                                         }
                                     }
-                                    else { // 4강
-                                        System.out.println("강의 4강까지 공부를 하기로 결심한 백수 오윤환, 시간이 얼마가 걸리든 목표한 강의까지 공부하기 위해 집중해서 공부를 하기 시작한다..");
-                                        System.out.println("\nQ.목표한 4강까지 집중해서 꼼꼼히 공부를 마친 백수 오윤환, 현재 시간은 오후 9시가 되었다. 공부는 마치고 다른 것을 하려고 하는데 무엇을 할까?" +
-                                                "\n1.저녁을 먹고 일찍 잔다    2.트위치를 본다");
+                                    else { // 공부
+                                        System.out.println("별 거 아니지만 오랜만에 취미생활을 즐겨 기분이 좋은 백수 오윤환, 현재의 기분으로 공부를 한다면 즐겁게 그리고 집중해서 할 수 있을 것만 같다. 모니터를 켜고 공부를 시작하하는 백수 오윤환.");
+                                        System.out.println("\nQ.오늘은 지난번 듣다가 말앗던 인프런 강의를 들으려고 하는데, 진도를 어디까지 나갈까?" +
+                                                "\n1.5강    2.7강");
 
                                         int answer103 = sc.nextInt();
 
@@ -2688,24 +2682,75 @@ public class Ohday {
                                             }
                                         }
 
-                                        if (answer103 == 1) { // 저녁을 먹고 일찍 잔다
-                                            System.out.println("공부하느라 배가 많이 고팠던 백수 오윤환, 엄마가 차려둔 저녁을 맛있게 먹고 지쳐 쓰러져 잠에 든다." +
-                                                    "\n오늘 하루를 알차게 보내기 위해 나름대로 최선을 다 했던 백수 오윤환, 전날 아르바이트를 한 뒤 새벽에 들어와 해가 뜰 때서야 잠에 들었던 여파로 일찍 잠에 들었다." +
-                                                    "\n비록 이른 잠에 청하지만 목표했던 공부도 완료했고 나름 알찬 하루를 보냈기 때문에 내일은 더 나은 하루를 보낼 수 있을 거 같다." +
-                                                    "\n-THE END-");
-                                            sc.close();
+                                        if (answer103 == 1) { // 5강
+                                            System.out.println("5강 까지 시청하며 공부하기로 결심한 백수 오윤환, 선생님의 자세한 설명과 직접 적용해보는 시간을 가지며 집중해서 공부를 한다.");
+
                                         }
-                                        else { // 트위치를 본다.
-                                            System.out.println("오랜만에 장시간 집중해서 공부를 하느라 피곤했던 백수 오윤환, 누워서 음악방송을 보다가 그대로 잠에 든다." +
-                                                    "\n오늘 하루를 알차게 보내기 위해 나름대로 최선을 다 했던 백수 오윤환, 전날 아르바이트를 한 뒤 새벽에 들어와 해가 뜰 때서야 잠에 들었던 여파로 일찍 잠에 들었다." +
-                                                    "\n비록 이른 잠에 청하지만 목표했던 공부도 완료했고 나름 알찬 하루를 보냈기 때문에 내일은 더 나은 하루를 보낼 수 있을 거 같다." +
-                                                    "\n-THE END-");
+                                        else { // 7강
+                                            System.out.println("7강 까지 시청하며 공부하기로 결심한 백수 오윤환, 선생님의 자세한 설명과 직접 적용해보는 시간을 가지며 집중해서 공부를 한다.");
 
                                         }
                                     }
                                 }
-                                else { // Michael Jackson의 첫 싱글
-                                    System.out.println();
+                                else { // Michael Jackson의 5집
+                                    System.out.println("Michael Jackson의 5집을 재생하는 백수 오윤환, 이 앨범은 펑크와 소울 모두를 느낄 수 있는 구성과 마이클 잭슨 특유의 미성이 돋보이는 곡들이 있어서 백수 오윤환이 좋아하는 앨범이다.");
+                                    System.out.println("\nQ.언제나 음악을 들을 때면 행복한 백수 오윤환, 앨범 하나를 다 듣는데 시간이 꽤나 걸리기 때문에 다른 앨범도 들을지 고민을 한다. 어떻게 할까?" +
+                                            "\n1.더 듣기    2.그만 듣기");
+
+                                    int answer111 = sc.nextInt();
+
+                                    for (;;) {
+
+                                        if (answer111 >= 1 && answer111 <= 2) {
+                                            break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
+                                        }
+                                        else if (answer111 == 0) {
+                                            System.out.println(answer111+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                            sc.close();
+                                            return;
+                                        }
+                                        else {
+                                            System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
+                                            answer111 = sc.nextInt();
+                                        }
+                                    }
+
+                                    if (answer111 == 1) { // 더 듣기
+                                        System.out.println("오늘 제대로 날을 잡은 듯 결심한 백수 오윤환, 한번 마음을 잡고 음악을 들으면 몇시간이고 만족할 때까지 음악만 듣기도 하는데, 아마도 오늘이 그 날이 될 예정이다.");
+                                        System.out.println("\nQ.이어서 들을 앨범을 고르는 백수 오윤환, 다음 후보엔 Chet Baker의 sings 앨범과 Taylor Swift의 7집이 있다. 어떤 것을 들을까?" +
+                                                "\n1.Chet Baker의 sings 앨범    2.Taylor Swift의 7집");
+
+                                        int answer112 = sc.nextInt();
+
+                                        for (;;) {
+
+                                            if (answer112 >= 1 && answer112 <= 2) {
+                                                break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
+                                            }
+                                            else if (answer112 == 0) {
+                                                System.out.println(answer112+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                                sc.close();
+                                                return;
+                                            }
+                                            else {
+                                                System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
+                                                answer112 = sc.nextInt();
+                                            }
+                                        }
+
+                                        if (answer112 == 1) { // Chet Baker의 sings 앨범
+                                            System.out.println("Chet Baker의 sings 앨범을 선택한 백수 오윤환, Chet Baker의 연주곡을 자주 듣기도 하지만 보컬이 들어간 곡도 굉장히 좋아하는 백수 오윤환이다.");
+
+                                        }
+                                        else { // Taylor Swift의 7집
+                                            System.out.println("Taylor Swift의 7집을 선택한 백수 오윤환, 우선 디스크가 굉장히 예쁘기 때문에 소장가치가 충분한 앨범. 하지만 해당 앨범에 Lover라는 곡을 너무 좋아하기 때문에 자주 듣는 앨범이다.");
+
+                                        }
+                                    }
+                                    else { // 그만 듣기
+                                        System.out.println("앨범 하나를 다 듣기 위해서는 평균 1시간은 소모가 되기 때문에 그만 듣기로 결정한 백수 오윤환.");
+
+                                    }
                                 }
                             }
                             else { // 인터넷 쇼핑
@@ -2713,25 +2758,25 @@ public class Ohday {
                                 System.out.println("\nQ." +
                                         "\n1.    2.");
 
-                                int answer103 = sc.nextInt();
+                                int answer112 = sc.nextInt();
 
                                 for (;;) {
 
-                                    if (answer103 >= 1 && answer103 <= 2) {
+                                    if (answer112 >= 1 && answer112 <= 2) {
                                         break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
                                     }
-                                    else if (answer103 == 0) {
-                                        System.out.println(answer103+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                    else if (answer112 == 0) {
+                                        System.out.println(answer112+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
                                         sc.close();
                                         return;
                                     }
                                     else {
                                         System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
-                                        answer103 = sc.nextInt();
+                                        answer112 = sc.nextInt();
                                     }
                                 }
 
-                                if (answer103 == 1) { //
+                                if (answer112 == 1) { //
                                     System.out.println(".");
 
                                 }
