@@ -2858,8 +2858,98 @@ public class Ohday {
                                         }
 
                                         if (answer115 == 1) { // 사두자
-                                            System.out.println("어차피 사두면 쓰게 되어있고 가격도 상당히 합리적이라고 생각하는 백수 오윤환, 무언가에 홀린듯 결제를 해버린다. 결국 무언가를 사고마는 백수 오윤환.");
+                                            System.out.println("어차피 사두면 쓰게 되어있고 가격도 상당히 합리적이라고 생각하는 백수 오윤환, 무언가에 홀린듯 결제를 해버린다. 결국 사고마는 백수 오윤환.");
+                                            System.out.println("\nQ.쇼핑을 마치고 저녁을 먹으려는 백수 오윤환, 오늘의 저녁 메뉴로 무엇을 먹을까?" +
+                                                    "\n1.된장찌개    2.순대국");
 
+                                            int answer135 = sc.nextInt();
+
+                                            for (;;) {
+
+                                                if (answer135 >= 1 && answer135 <= 2) {
+                                                    break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
+                                                }
+                                                else if (answer135 == 0) {
+                                                    System.out.println(answer135+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                                    sc.close();
+                                                    return;
+                                                }
+                                                else {
+                                                    System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
+                                                    answer135 = sc.nextInt();
+                                                }
+                                            }
+
+                                            if (answer135 == 1) { // 된장찌개
+                                                System.out.println("침대에 누워 먹을 것이 뭐가 있는지 떠올려보는 백수 오윤환, 엄마가 해둔 된장찌개가 있는 것이 생각이 났고 데워서 먹기로 한다." +
+                                                        "\n하지만 침대에 누운 상태 그대로 잠에 들어버리는 백수 오윤환... 결국 아무것도 먹지 않고 잠든다.");
+                                                System.out.println("\nQ.새벽에 잠애서 깬 백수 오윤환, 뭔가 먹을지 말지 고민이 된다. 어떻게 할까?" +
+                                                        "\n1.먹는다    2.잔다");
+
+                                                int answer136 = sc.nextInt();
+
+                                                for (;;) {
+
+                                                    if (answer136 >= 1 && answer136 <= 2) {
+                                                        break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
+                                                    }
+                                                    else if (answer136 == 0) {
+                                                        System.out.println(answer136+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                                        sc.close();
+                                                        return;
+                                                    }
+                                                    else {
+                                                        System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
+                                                        answer136 = sc.nextInt();
+                                                    }
+                                                }
+
+                                                if (answer136 == 1) { // 먹는다
+                                                    System.out.println("배가 고픈 백수 오윤환, 뭐라도 먹겠다고 생각을 했지만 밀려오는 잠을 이기지 못하고 다시 잠에든다" +
+                                                            "\n-THE END-.");
+                                                    sc.close(); // 프로그램 종료
+
+                                                }
+                                                else { // 잔다
+                                                    System.out.println("비몽사몽인 백수 오윤환, 잠시 생각만 했을 뿐 다시 기절하듯 잠을 잔다" +
+                                                            "-THE END-.");
+                                                    sc.close(); // 프로글매 종료
+
+                                                }
+
+                                            }
+                                            else { // 순대국
+                                                System.out.println("엄마가 포장해온 순대국을 데워서 먹는 백수 오윤환, 동네에서 가장 맛있기로 유명한 순대국집이라 언제 먹어도 맛있다.");
+                                                System.out.println("\nQ." +
+                                                        "\n1.    2.");
+
+                                                int answer137 = sc.nextInt();
+
+                                                for (;;) {
+
+                                                    if (answer137 >= 1 && answer137 <= 2) {
+                                                        break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
+                                                    }
+                                                    else if (answer137 == 0) {
+                                                        System.out.println(answer137+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                                        sc.close();
+                                                        return;
+                                                    }
+                                                    else {
+                                                        System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
+                                                        answer137 = sc.nextInt();
+                                                    }
+                                                }
+
+                                                if (answer137 == 1) { //
+                                                    System.out.println(".");
+
+                                                }
+                                                else { //
+                                                    System.out.println(".");
+
+                                                }
+                                            }
                                         }
                                         else { // 사지 말자
                                             System.out.println("분명히 잠깐 쓰고 나중에 좋은 향수를 사면 안 쓸게 분명하다. 이성의 끈을 놓지 않으며 합리적인 생각으로 충동구매를 억제한 백수 오윤환.");
@@ -3271,7 +3361,7 @@ public class Ohday {
                                                     }
                                                 }
                                             }
-                                        } // else 하위 스토리 모두 완료
+                                        } // 하위 스토리 모두 완료
                                         else { // 바로 공부
                                             System.out.println("지금 느낌이 왔을 때 공부를 해야 집중해서 효과적으로 공부할 수 있다. 저녁은 나중에 해결할 문제니 바로 공부를 하기로 결심한 백수 오윤환이다.");
                                             System.out.println("\nQ.책상에 앉아 공부를 시작하는 백수 오윤환, 막상 공부를 시작하니 생각보다 집중이 되지 않는다. 카페에 가서 공부를 할까?" +
