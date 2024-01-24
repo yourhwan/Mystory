@@ -223,8 +223,7 @@ public class Ohday {
                                     }
 
                                 }
-                            }
-                            else { // 간장계란밥
+                            } else { // 간장계란밥
                                 System.out.println("집에서 간단하게 그리고 맛있게 먹을 수 있는 간장계란밥을 만들어서 먹는 백수 오윤환.");
                                 System.out.println("\nQ.역시 간장계란밥은 만들어 먹기도 편하고 맛까지 있다. 식사까지 마친 백수 오윤환, 이제 무엇을 할까?" +
                                         "\n1.독서    2.공부");
@@ -319,15 +318,14 @@ public class Ohday {
                                     }
                                 }
                             }
-                        }
-                        else { // 씻고 밥 먹기
+                        } else { // 씻고 밥 먹기
                             System.out.println("방송은 안 봐도 그만이다, 멀끔히 씻고 나와 엄마가 차려준 밥을 먹는 백수 오윤환. 왠지 모르겠지만 스스로를 나름 부지런하다고 생각하는 것 같다.");
                             System.out.println("\nQ.오전을 알차게 보내고 있는 백수 오윤환, 오늘은 엄마와 데이트를 하려고 한다. 엄마와 어디를 갈까?" +
                                     "\n1.동네 카페    2.백화점");
 
                             int answer28 = sc.nextInt();
 
-                            for (;;) {
+                            for (; ; ) {
 
                                 if (answer28 >= 1 && answer28 <= 2) {
                                     break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
@@ -348,7 +346,7 @@ public class Ohday {
 
                                 int answer60 = sc.nextInt();
 
-                                for (;;) {
+                                for (; ; ) {
 
                                     if (answer60 >= 1 && answer60 <= 2) {
                                         break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
@@ -369,17 +367,15 @@ public class Ohday {
 
                                     int answer164 = sc.nextInt();
 
-                                    for (;;) {
+                                    for (; ; ) {
 
                                         if (answer164 >= 1 && answer164 <= 2) {
                                             break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                        }
-                                        else if (answer164 == 0) {
-                                            System.out.println(answer164+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                        } else if (answer164 == 0) {
+                                            System.out.println(answer164 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
                                             sc.close();
                                             return;
-                                        }
-                                        else {
+                                        } else {
                                             System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
                                             answer164 = sc.nextInt();
                                         }
@@ -393,8 +389,7 @@ public class Ohday {
                                                 "\n-THE END-");
                                         sc.close(); // 프로그램 종료
 
-                                    }
-                                    else { // 같이 간다
+                                    } else { // 같이 간다
                                         System.out.println("엄마와 데이트를 하기로 마음 먹었던 하루인 만큼 함께 마트로 향하는 백수 오윤환." +
                                                 "\n정말 오랜만에 엄마와 같이 마트에 가서 장을 본 뒤 집으로 돌아온다." +
                                                 "\n장을 보는 내내 함께 마트에 오기를 잘 했다는 생각이 들었던 백수 오윤환, 엄마와 몇년만에 함께 장도 보니 옛날 어린시절 추억이 새록새록했다." +
@@ -410,17 +405,15 @@ public class Ohday {
 
                                     int answer165 = sc.nextInt();
 
-                                    for (;;) {
+                                    for (; ; ) {
 
                                         if (answer165 >= 1 && answer165 <= 2) {
                                             break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                        }
-                                        else if (answer165 == 0) {
-                                            System.out.println(answer165+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                        } else if (answer165 == 0) {
+                                            System.out.println(answer165 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
                                             sc.close();
                                             return;
-                                        }
-                                        else {
+                                        } else {
                                             System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
                                             answer165 = sc.nextInt();
                                         }
@@ -434,8 +427,7 @@ public class Ohday {
                                                 "\n-THE END-");
                                         sc.close(); // 프로그램 종료
 
-                                    }
-                                    else { // 같이 간다
+                                    } else { // 같이 간다
                                         System.out.println("엄마와 데이트를 하기로 마음 먹었던 하루인 만큼 함께 마트로 향하는 백수 오윤환." +
                                                 "\n정말 오랜만에 엄마와 같이 마트에 가서 장을 본 뒤 집으로 돌아온다." +
                                                 "\n장을 보는 내내 함께 마트에 오기를 잘 했다는 생각이 들었던 백수 오윤환, 엄마와 몇년만에 함께 장도 보니 옛날 어린시절 추억이 새록새록했다." +
@@ -473,17 +465,15 @@ public class Ohday {
 
                                     int answer166 = sc.nextInt();
 
-                                    for (;;) {
+                                    for (; ; ) {
 
                                         if (answer166 >= 1 && answer166 <= 2) {
                                             break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                        }
-                                        else if (answer166 == 0) {
-                                            System.out.println(answer166+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                        } else if (answer166 == 0) {
+                                            System.out.println(answer166 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
                                             sc.close();
                                             return;
-                                        }
-                                        else {
+                                        } else {
                                             System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
                                             answer166 = sc.nextInt();
                                         }
@@ -496,8 +486,7 @@ public class Ohday {
                                                 "\n-THE END-");
                                         sc.close(); // 프로그램 종료
 
-                                    }
-                                    else { // 그냥 간다
+                                    } else { // 그냥 간다
                                         System.out.println("지갑사정 때문에 집에 가서 먹으려고 했지만 오랜만에 함께 나온만큼 엄마와 맛있는 밥을 먹고 들어가기로 마음을 고쳐먹은 백수 오윤환, 알바 한번 더 하면된다는 마인드다." +
                                                 "\n엄마는 비싸다며 만류하지만 이 시간이 사뭇 즐거운지 평소보다 표정이 밝아 보인다." +
                                                 "\n엄마와 저녁식사까지 마치고 집에 돌아온 백수 오윤환, 몇년만에 엄마와 풀코스로 밖에서 시간을 보내니 어린시절이 생각이나며 마음이 몽글몽글해진 하루였다." +
@@ -513,17 +502,15 @@ public class Ohday {
 
                                     int answer167 = sc.nextInt();
 
-                                    for (;;) {
+                                    for (; ; ) {
 
                                         if (answer167 >= 1 && answer167 <= 2) {
                                             break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                        }
-                                        else if (answer167 == 0) {
-                                            System.out.println(answer167+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                        } else if (answer167 == 0) {
+                                            System.out.println(answer167 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
                                             sc.close();
                                             return;
-                                        }
-                                        else {
+                                        } else {
                                             System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
                                             answer167 = sc.nextInt();
                                         }
@@ -536,8 +523,7 @@ public class Ohday {
                                                 "\n-THE END-");
                                         sc.close(); // 프로그램 종료
 
-                                    }
-                                    else { // 아쉽지만 다음에 해드린다
+                                    } else { // 아쉽지만 다음에 해드린다
                                         System.out.println("집안 사정이 힘들어지며 몇년 동안 옷을 사본적이 없는 엄마, 백수 오윤환은 늘 이 부분이 마음에 걸렸었다." +
                                                 "\n오늘은 엄마와 데이트를 하는 날이니 만큼 엄마에게 선물을 해드리고싶지만, 지갑사정이 여의치 않다. 괜찮다는 엄마의 모습을 보니 마음이 미어지는 백수 오윤환." +
                                                 "\n집에 돌아와 그 때를 곱씹어보며 얼른 취업을 해서 엄마에게 좋은 것들을 더 많이 해드려야겠다는 결심을 하는 하루였다." +
@@ -620,17 +606,15 @@ public class Ohday {
 
                                     int answer168 = sc.nextInt();
 
-                                    for (;;) {
+                                    for (; ; ) {
 
                                         if (answer168 >= 1 && answer168 <= 2) {
                                             break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                        }
-                                        else if (answer168 == 0) {
-                                            System.out.println(answer168+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                        } else if (answer168 == 0) {
+                                            System.out.println(answer168 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
                                             sc.close();
                                             return;
-                                        }
-                                        else {
+                                        } else {
                                             System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
                                             answer168 = sc.nextInt();
                                         }
@@ -644,17 +628,15 @@ public class Ohday {
 
                                         int answer169 = sc.nextInt();
 
-                                        for (;;) {
+                                        for (; ; ) {
 
                                             if (answer169 >= 1 && answer169 <= 2) {
                                                 break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                            }
-                                            else if (answer169 == 0) {
-                                                System.out.println(answer169+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                            } else if (answer169 == 0) {
+                                                System.out.println(answer169 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
                                                 sc.close();
                                                 return;
-                                            }
-                                            else {
+                                            } else {
                                                 System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
                                                 answer169 = sc.nextInt();
                                             }
@@ -666,8 +648,7 @@ public class Ohday {
                                                     "\n-THE END-");
                                             sc.close(); // 프로그램 종료
 
-                                        }
-                                        else { // 안간다
+                                        } else { // 안간다
                                             System.out.println("너무 가고싶지만 내일 일정을 위해 각자의 집으로 돌아가는 백수 오윤환과 친구, 다음을 기약하며 헤어진다." +
                                                     "\n나름 공부도 하고 친구도 만나고 나쁘지만은 않은 하루였다." +
                                                     "\n-THE END-");
@@ -675,8 +656,7 @@ public class Ohday {
 
                                         }
 
-                                    }
-                                    else { // 안간다
+                                    } else { // 안간다
                                         System.out.println("오늘은 카페 마감까지 공부를 할 계획이었던 백수 오윤환, 아쉽지만 친구에게 술은 다음에 마시자고 이야기하고 다시 공부에 집중한다." +
                                                 "\n그렇게 마감까지 공부를 한 백수 오윤환, 스스로 대견함을 느끼며 하루를 마무리 한다." +
                                                 "\n-THE END-");
@@ -690,8 +670,7 @@ public class Ohday {
                                             "\n-THE END-");
                                     sc.close(); // 프로그램 종료
                                 }
-                            }
-                            else { // 잠시 휴식
+                            } else { // 잠시 휴식
                                 System.out.println("집중력이 떨어졌을 때는 잠시 쉬는 것도 도움이 될 수 있다. 잠시 휴식을 취하는 백수 오윤환.");
                                 System.out.println("\nQ.휴식을 취하며 잠시 휴대폰을 집어든 백수 오윤환, 문득 학원을 다닐 때 친했던 형이 취업을 했다는 얘기가 떠오른다. 형에게 연락을 해볼까?" +
                                         "\n1.연락을 해본다    2.연락하지 않는다");
@@ -719,8 +698,7 @@ public class Ohday {
                                             "\n남들보다 취업이 늦는 만큼 더 좋은 곳에 가겠다는 의지가 불타오른 하루였다." +
                                             "\n-THE END-");
                                     sc.close(); // 프로그램 종료
-                                }
-                                else { // 연락하지 않는다
+                                } else { // 연락하지 않는다
                                     System.out.println("자신의 현재 모습이 부끄러운지 연락하기가 고민스러운 백수 오윤환, 결국 연락을 하지 않고 홀린듯 침대로 기어 들어간다.");
                                     System.out.println("그동안의 설움과 힘듦 그리고 자신의 모습이 부끄러운 백수 오윤환, 이불 속에서 오만가지 감정을 곱씹으며 울다가 무기력하게 하루를 흘려보낸다." +
                                             "\n평소 약한 모습을 스스로에게도 감추었던 백수 오윤환, 어쩌면 이런 날이 필요했을 수도 있지 않을까? 이대로 무너질 오윤환은 아니기 때문에 더 나은 내일을 기대할 수 있다." +
@@ -728,7 +706,8 @@ public class Ohday {
                                     sc.close(); // 프로그램 종료
                                 }
                             }
-                        } else { // 밖에서 공부
+                        }
+                        else { // 밖에서 공부
                             System.out.println("집에 있으면 어영부영 늦장을 부려 시간을 낭비할 것 같다는 생각이 든 백수 오윤환, 재빠르게 씻은 뒤 아무 옷이나 주워 입고 집 밖으로 나선다.");
                             System.out.println("\nQ.공부할 카페를 두고 고민하는 백수 오윤환, 선택지엔 두 곳이 있다. 거리가 가까운 스타벅스 그리고 자리도 콘센트도 널널한 엔젤리너스. 어디로 갈까?" +
                                     "\n1.스타벅스    2.엔젤리너스");
@@ -777,17 +756,15 @@ public class Ohday {
 
                                     int answer170 = sc.nextInt();
 
-                                    for (;;) {
+                                    for (; ; ) {
 
                                         if (answer170 >= 1 && answer170 <= 2) {
                                             break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                        }
-                                        else if (answer170 == 0) {
-                                            System.out.println(answer170+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                        } else if (answer170 == 0) {
+                                            System.out.println(answer170 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
                                             sc.close();
                                             return;
-                                        }
-                                        else {
+                                        } else {
                                             System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
                                             answer170 = sc.nextInt();
                                         }
@@ -800,8 +777,7 @@ public class Ohday {
                                                 "\n취업에 성공해서 누구보다 자신에게 떳떳한 사람이 되겠다는 의지를 갖고 남은 하루를 공부로 불태운다." +
                                                 "\n-THE END-");
                                         sc.close(); // 프로그램 종료
-                                    }
-                                    else { // 카페 마감까지
+                                    } else { // 카페 마감까지
                                         System.out.println("배가 고픈지도 모른채 집중해서 카페 마감까지 공붑를 하고 집으로 돌아가는 백수 오윤환, 다시 마음을 다잡은 거 같다.");
                                         System.out.println("집에 돌아와서도 밥을 먹지 않고 공부를 계속 하는 백수 오윤환, 카페에서 마주친 친구들이 승무원에 합격한 사실을 알고 있었다." +
                                                 "\n승무원의 꿈을 저버리고 다른 꿈을 꾸고 있는 자신에게 후회하지 않기 위해 마음을 다잡으며 공부로 남은 하루를 보낸다." +
@@ -815,17 +791,15 @@ public class Ohday {
 
                                     int answer171 = sc.nextInt();
 
-                                    for (;;) {
+                                    for (; ; ) {
 
                                         if (answer171 >= 1 && answer171 <= 2) {
                                             break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                        }
-                                        else if (answer171 == 0) {
-                                            System.out.println(answer171+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                        } else if (answer171 == 0) {
+                                            System.out.println(answer171 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
                                             sc.close();
                                             return;
-                                        }
-                                        else {
+                                        } else {
                                             System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
                                             answer171 = sc.nextInt();
                                         }
@@ -838,8 +812,7 @@ public class Ohday {
                                                 "\n-THE END-");
                                         sc.close(); // 프로그램 종료
 
-                                    }
-                                    else { // 못알아본척한다
+                                    } else { // 못알아본척한다
                                         System.out.println("친구들과 눈이 마주쳤지만 왠지모르게 모른척이 하고싶은 백수 오윤환, 시선을 회피하고 황급히 집으로 돌아간다.");
                                         System.out.println("황급히 집으로 돌아온 백수 오윤환, 스스로 왜 도망치듯 집에 왔는지 생각을 해보니 자신의 상황이 부끄럽다는 생각이 있었던 거 같다." +
                                                 "\n왠지모를 슬픔과 분노가 올라오는 마음을 다잡고 하루종일 공부를 하며 시간을 보낸다." +
@@ -871,10 +844,84 @@ public class Ohday {
 
                                 if (answer69 == 1) { // 알고리즘
                                     System.out.println("오늘 공부하던 알고리즘을 이어서 공부하는 백수 오윤환, 오늘은 알고리즘의 날이다.");
+                                    System.out.println("오랜만에 학원에서 공부할 떄만큼 집중력을 발휘하는 백수 오윤환, 점심식사도 건너 뛰고 계속해서 공부를 한다.");
+                                    System.out.println("\nQ.계속해서 공부를 하는 백수 오윤환, 이제야 조금 배가 고픈 것 같다. 어떻게 배를 채울까?" +
+                                            "\n1.카페에서 빵 먹기    2.집에 돌아가 밥 먹기");
 
-                                } else { // 인프런 강의 듣기
+                                    int answer172 = sc.nextInt();
+
+                                    for (;;) {
+
+                                        if (answer172 >= 1 && answer172 <= 2) {
+                                            break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
+                                        }
+                                        else if (answer172 == 0) {
+                                            System.out.println(answer172+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                            sc.close();
+                                            return;
+                                        }
+                                        else {
+                                            System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
+                                            answer172 = sc.nextInt();
+                                        }
+                                    }
+
+                                    if (answer172 == 1) { // 카페에서 빵 먹기
+                                        System.out.println("카페에서 파는 빵을 사먹으며 대충 끼니를 해결하는 백수 오윤환, 몸이 조금 힘든 것 같지만 계속해서 공부를 한다." +
+                                                "\n공부를 하던 중 체력의 한계가 찾아온 백수 오윤환, 최근 공부하는 습관이 없어져서인지 더이상은 무리라는 것을 느끼고 집으로 돌아가 쉰다." +
+                                                "\n내일 부터는 체력운동도 병행하면서 공부를 해야겠다는 생각을 하며 휴식을 취하고 하루를 마무리한다." +
+                                                "\n-THE END-");
+                                        sc.close(); // 프로그램 종료
+
+                                    }
+                                    else { // 집에 돌아가 밥 먹기
+                                        System.out.println("더이상은 못버틸 것 같은 체력의 한계를 느낀 백수 오윤환, 집으로 돌아가 때마침 엄마가 차려둔 저녁을 먹는다." +
+                                                "\n저녁을 먹고 잠시 누웠는데 그대로 잠들어버린 백수 오윤환, 아무래도 장기간 운동도 안하고 공부하는 습관도 다 사라져서 쉽지가 않은 것 같다." +
+                                                "\n꾸준히 그리고 건강하게 취준생활을 하기 위해서는 꾸준한 체력관리와 공부습관임을 다시한번 느낄 수 있었던 하루다." +
+                                                "\n-THE END-");
+                                        sc.close(); // 프로젝트 종료
+
+                                    }
+                                }
+                                else { // 인프런 강의 듣기
                                     System.out.println("집에서는 알고리즘 공부를 많이 했으니 인프런 강의를 들으며 공부를 하는 백수 오윤환, 다시 집중을 해서 열심히 공부를 한다.");
+                                    System.out.println("강의의 몰입도가 굉장히 높아서인지 장시간 집중해서 공부하는 백수 오윤환, 점심식사를 건너 뛰 계속해서 공부를 한다.");
+                                    System.out.println("\nQ.공부를 하다가 체력의 한계를 느낀 백수 오윤환. 집으로 돌아왔는데 도저히 아무것도 할 수가 없는 상태다. 어떻게 할까?" +
+                                            "\n1.일찍 잔다    2.밥을 먹고 공부를 다시 한다");
 
+                                    int answer173 = sc.nextInt();
+
+                                    for (;;) {
+
+                                        if (answer173 >= 1 && answer173 <= 2) {
+                                            break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
+                                        }
+                                        else if (answer173 == 0) {
+                                            System.out.println(answer173+"을(를) 입력하셨습니다. 프로그램을 종료합니다.");
+                                            sc.close();
+                                            return;
+                                        }
+                                        else {
+                                            System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
+                                            answer173 = sc.nextInt();
+                                        }
+                                    }
+
+                                    if (answer173 == 1) { // 일찍 잔다
+                                        System.out.println("독감으로 고생을 했던 백수 오윤환, 아직 몸이 완전히 회복되지 않았나보다. 집에 오자마자 옷도 갈아입지 않고 그대로 침대에 쓰러져 잠든다." +
+                                                "\n무엇을 하든지 건강이 최우선임을 다시한번 깨달을 수 있는 하루였다." +
+                                                "\n-THE END-");
+                                        sc.close(); // 프로그램 종료
+
+                                    }
+                                    else { // 밥을 먹고 공부를 다시 한다
+                                        System.out.println("몸상태가 이상함을 느낀 백수 오윤환, 일단 밥을 먹고 조금 더 힘을 내서 공부를 하기로 마음을 먹는다." +
+                                                "\n엄마가 저녁을 준비하는 동안 기다리는데, 그대로 기절잠을 해버리는 백수 오윤환, 아무래도 독감의 여파로 체력이 많이 떨어진 거 같다." +
+                                                "\n오늘은 푹 쉬고 내일부터 차근차근 다시 시작하면 되니 조급해하지 말자!" +
+                                                "\n-THE END-");
+                                        sc.close(); // 프로그램 종료
+
+                                    }
                                 }
                             }
                         }
@@ -882,14 +929,14 @@ public class Ohday {
 
                 } else if (answer3 == 2) { // 씻기
                     System.out.println("현재 시간은 오전 9시, 다시 잠에 들지 않기 위해 곧장 화장실로 가서 개운하게 씻고 나온 백수 오윤환. 일찍 일어나 세면까지 마치니 상쾌함과 뿌듯함이 몰려 온다.");
-                    System.out.println("\nQ.부지런한 하루를 보내기 위해 무엇을 할지 고민하는 백수 오윤환, 그에겐 두 가지 선택지가 떠올랐다. 무엇을 할까요?" +
-                            "\n1.아침식사    2.오전 공부");
+                    System.out.println("\nQ.부지런한 하루를 보내기 위해 무엇을 할지 고민하는 백수 오윤환, 무엇을 할까요?" +
+                            "\n1.아침식사");
 
                     int answer7 = sc.nextInt();
 
                     for (; ; ) {
 
-                        if (answer7 >= 1 && answer7 <= 2) {
+                        if (answer7 >= 1) {
                             break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
                         } else if (answer7 == 0) {
                             System.out.println(answer7 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
@@ -1080,185 +1127,8 @@ public class Ohday {
                                 }
                             }
                         }
-                    } else { // 오전 공부
-                        System.out.println("현재 시간은 오전 9시, 그의 변화는 진심인 걸까? 웬일인지 공부의욕이 불타는 백수 오윤환, 방으로 돌아와 컴퓨터를 켠다.");
-                        System.out.println("\nQ.간만에 아침부터 공부를 하려는 백수 오윤환, 오늘은 어떤 공부를 할까?" +
-                                "\n1.알고리즘    2.인프런 강의 보기");
-
-                        int answer16 = sc.nextInt();
-
-                        for (; ; ) {
-
-                            if (answer16 >= 1 && answer16 <= 2) {
-                                break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                            } else if (answer16 == 0) {
-                                System.out.println(answer16 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
-                                sc.close();
-                                return;
-                            } else {
-                                System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
-                                answer16 = sc.nextInt();
-                            }
-                        }
-
-                        if (answer16 == 1) { // 알고리즘
-                            System.out.println("학원을 마친 후 제대로 공부를 하지 않아 까먹은 문법이 많은 백수 오윤환, 취준에는 알고리즘이 필수라는 이야기를 많이 들어왔을 뿐더러 까먹은 문법들을 복기할 겸 알고리즘을 공부한다.");
-                            System.out.println("\nQ.알고리즘을 공부하며 몰랐던 문제들이 꽤나 있었던 백수 오윤환, 해당 문제들을 블로그에 정리하여 업로드 할지 고민이다. 어떻게 할까?" +
-                                    "\n1.블로그 게시    2.깃허브에 커밋");
-
-                            int answer36 = sc.nextInt();
-
-                            for (; ; ) {
-
-                                if (answer36 >= 1 && answer36 <= 2) {
-                                    break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                } else if (answer36 == 0) {
-                                    System.out.println(answer36 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
-                                    sc.close();
-                                    return;
-                                } else {
-                                    System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
-                                    answer36 = sc.nextInt();
-                                }
-                            }
-
-                            if (answer36 == 1) { // 블로그 게시
-                                System.out.println("알고리즘을 풀며 공부가 되었던 것들을 블로그에 업로드 하는 백수 오윤환, 공부했던 것들을 정리하니 더욱 각인되는 것 같다.");
-                                System.out.println("\nQ.오랜만에 시간 가는 줄 모르고 공부에 열중한 백수 오윤환, 어느덧 점심시간이 훌쩍 지났다. 밥을 먹으려는데 무엇을 먹을까?" +
-                                        "\n1.집밥    2.컵밥");
-
-                                int answer74 = sc.nextInt();
-
-                                for (; ; ) {
-
-                                    if (answer74 >= 1 && answer74 <= 2) {
-                                        break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                    } else if (answer74 == 0) {
-                                        System.out.println(answer74 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
-                                        sc.close();
-                                        return;
-                                    } else {
-                                        System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
-                                        answer74 = sc.nextInt();
-                                    }
-                                }
-
-                                if (answer74 == 1) { // 집밥
-                                    System.out.println("냉장고를 열어보니 엄마가 맛있게 해둔 반찬들이 많다. 맛있는 집밥을 먹으며 끼니를 해결하는 백수 오윤환.");
-
-                                } else { // 컵밥
-                                    System.out.println("배는 고프지만 딱히 입맛은 없는 백수 오윤환, 지난번 엄마와 함께 장을 볼 때 사왔던 컵밥을 먹는다.");
-
-                                }
-                            } else { // 깃허브에 커밋
-                                System.out.println("블로그까지 올릴 필요성은 느끼지 못한 백수 오윤환, 브로그에 올리지 않는 대신 주석을 열심히 달아두고 연동해두었던 깃허브에 커밋을 한다.");
-                                System.out.println("\nQ.오랜만에 시간 가는 줄 모르고 공부에 열중한 백수 오윤환, 어느덧 점심시간이 훌쩍 지났다. 밥을 먹으려는데 무엇을 먹을까?" +
-                                        "\n1.집밥    2.컵밥");
-
-                                int answer75 = sc.nextInt();
-
-                                for (; ; ) {
-
-                                    if (answer75 >= 1 && answer75 <= 2) {
-                                        break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                    } else if (answer75 == 0) {
-                                        System.out.println(answer75 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
-                                        sc.close();
-                                        return;
-                                    } else {
-                                        System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
-                                        answer75 = sc.nextInt();
-                                    }
-                                }
-
-                                if (answer75 == 1) { // 집밥
-                                    System.out.println("냉장고를 열어보니 엄마가 맛있게 해둔 반찬들이 많다. 맛있는 집밥을 먹으며 끼니를 해결하는 백수 오윤환.");
-
-                                } else { // 컵밥
-                                    System.out.println("배는 고프지만 딱히 입맛은 없는 백수 오윤환, 지난번 엄마와 함께 장을 볼 때 사왔던 컵밥을 먹는다.");
-
-                                }
-                            }
-                        } else { // 인프런 강의 보기
-                            System.out.println("구매해두었던 김영한의 Spring 강의를 보며 공부를 시작한 백수 오윤환, 열심히 공부를 하는데 강의가 꽤나 마음에 든 것 같다.");
-                            System.out.println("\nQ.어느덧 점시시간이 되었고, 식사를 할 겸 휴식을 갖던 중 점심 메뉴를 고민한다. 오늘의 점심은 무엇을 먹을까?" +
-                                    "\n1.돈카츠    2.마라탕");
-
-                            int answer37 = sc.nextInt();
-
-                            for (; ; ) {
-
-                                if (answer37 >= 1 && answer37 <= 2) {
-                                    break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                } else if (answer37 == 0) {
-                                    System.out.println(answer37 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
-                                    sc.close();
-                                    return;
-                                } else {
-                                    System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
-                                    answer37 = sc.nextInt();
-                                }
-                            }
-
-                            if (answer37 == 1) { // 돈카츠
-                                System.out.println("동네에 꽤나 괜찮은 돈카츠 집이 생긴 것이 생각 난 백수 오윤환, 마침 오후에는 밖에서 공부를 할 예정이기에 짐을 챙겨 돈카츠 집으로 향한다.");
-                                System.out.println("\nQ.돈카츠 집에 도착한 백수 오윤환, 주문을 하려는데 안심카츠와 등심카츠 중에서 고민이 된다. 어떤 것을 먹을까?" +
-                                        "\n1.안심카츠    2.등심카츠");
-
-                                int answer76 = sc.nextInt();
-
-                                for (; ; ) {
-
-                                    if (answer76 >= 1 && answer76 <= 2) {
-                                        break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                    } else if (answer76 == 0) {
-                                        System.out.println(answer76 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
-                                        sc.close();
-                                        return;
-                                    } else {
-                                        System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
-                                        answer76 = sc.nextInt();
-                                    }
-                                }
-
-                                if (answer76 == 1) { // 안심카츠
-                                    System.out.println("부드럽고 육즙이 좌르르 흐르는 안심카츠를 주문한 백수 오윤환, 겉바속촉의 안심카츠를 빠르게 먹어치운다.");
-
-                                } else { // 등심카츠
-                                    System.out.println("근본은 등심카츠지! 등심카츠를 주문한 백수 오윤환, 빠르게 등심카츠를 먹어치운다.");
-
-                                }
-                            } else { // 마라탕
-                                System.out.println("얼큰한 국물과 각종 채소 그리고 고기가 들어간 마라탕이 땡기는 백수 오윤환, 마침 오후에는 밖에서 공부를 할 예정이었기에 짐을 챙겨 엔젤리너스 앞 마라탕 가게로 향한다.");
-                                System.out.println("\nQ.마라탕 가게에 도착한 뒤 각종 채소와 토핑들을 담고 결제를 하러 간다. 이 때 고기 추가를 할지 말지 고민하는 백수 오윤환, 어떻게 할까?" +
-                                        "\n1.고기추가    2.그냥 먹기");
-
-                                int answer77 = sc.nextInt();
-
-                                for (; ; ) {
-
-                                    if (answer77 >= 1 && answer77 <= 2) {
-                                        break; // 1이상 2이하의 보기 선택시 반복 벗어나 다음 코드 실행
-                                    } else if (answer77 == 0) {
-                                        System.out.println(answer77 + "을(를) 입력하셨습니다. 프로그램을 종료합니다.");
-                                        sc.close();
-                                        return;
-                                    } else {
-                                        System.out.println("⚠︎알림: 보기에 제시 되어진 숫자만 입력해주세요.");
-                                        answer77 = sc.nextInt();
-                                    }
-                                }
-
-                                if (answer77 == 1) { // 고기추가
-                                    System.out.println("채소도 좋지만 고기가 더 좋은 백수 오윤환, 지갑 사정이 좋지 않지만 고기추가를 자행한 뒤 야무지게 식사를 한다.");
-
-                                } else { // 그냥 먹기
-                                    System.out.println("고기추가가 너무나 하고싶었지만 지갑 사정이 좋지 않다. 고기를 추가하지 않았지만 맛있게 식사를 한다.");
-
-                                }
-                            }
-                        }
                     }
+                    // 오전 공부 삭제 위치
                 } else { // 아침식사
                     System.out.println("현재 시간은 오전 9시, 일어나자마자 배가 고픈 백수 오윤환. 아침 식사를 위해 부엌으로 향한다.");
                     System.out.println("\nQ.아침 메뉴 선택에 신중을 기하는 백수 오윤환, 집밥과 편의점에서 도시락 사이에서 고민을 한다. 무엇을 먹을까?" +
