@@ -5,7 +5,7 @@ import java.util.*;
 public class Circle {
     public static void main(String[] args) {
 
-        System.out.println("원의 넓이를 입력해주세요.");
+        System.out.println("원의 넓이를 입력해주세요.\n:");
         Scanner input = new Scanner(System.in);
 
         int answer; // 입력 받은 정수

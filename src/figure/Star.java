@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Star {
     public static void main(String[] args) {
 
-        System.out.println("숫자를 입력하세요.");
+        System.out.print("별의 넓이를 입력해주세요.\n:");
         Scanner input = new Scanner(System.in);
 
         int answer; // 입력 정수
@@ -20,12 +20,15 @@ public class Star {
         answer = input.nextInt();
 
         // 별의 세로 길이 생성
-        height = answer * 6;
+        height = answer * 9;
 
         // 별의 가로 길이 생성
-        width = answer * 12;
+        width = answer * 15;
 
-
+        // 별의 가로 길이가 짝수일 경우 +1을 해준다.
+        if (width % 2 == 0) {
+            width += 1;
+        }
 
         // 가로 중앙점 생성
         center = width / 2;
